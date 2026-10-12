@@ -188,9 +188,8 @@ Data access and extraction can extend this schedule. Spend the first session get
 | Missing training class | Recover that class's videos, or explicitly rebuild a smaller first-K prototype |
 | Cache provenance changed | Use a new `--cache` directory; never combine incompatible feature extractions |
 | Camera black / cannot open | Close Teams/Zoom; enable camera permissions; try `--camera 1` |
-| OpenCV cannot create window | Use local desktop Python with `opencv-python`, not a headless package or hosted notebook |
+| OpenCV cannot create window | Use local desktop Python with `opencv-contrib-python`, not a headless package or hosted notebook; install only one OpenCV distribution |
 | Accuracy high offline, poor live | Check crop/orientation, lighting, sign duration, tracking and domain shift |
 | Always uncertain | Inspect tracking and true vocabulary first; tune threshold on development data, not test |
 | Very slow | Use fewer prototype classes, smaller `--hidden 128`, or a suitable GPU; measure before optimizing |
 | Output directory not empty | Use a new run name; prior experiments are intentionally protected |
-

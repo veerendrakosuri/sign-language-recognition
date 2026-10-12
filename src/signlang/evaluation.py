@@ -88,4 +88,3 @@ def evaluate(args):
                "Missing videos and classes change comparability; inspect metrics.json.\n")
     (out / "results.md").write_text(summary, encoding="utf-8")
     print(summary)
-

@@ -74,4 +74,3 @@ def webcam(args):
     finally:
         cap.release()
         cv2.destroyAllWindows()
-
