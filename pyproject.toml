@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sign-language-recognition"
+version = "0.1.0"
+description = "WLASL landmark baseline, GRU training, evaluation and webcam demo"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26,<3", "scikit-learn>=1.4,<2", "torch>=2.6,<3",
+  "opencv-python>=4.10,<5", "mediapipe>=0.10.20,<0.11",
+  "matplotlib>=3.8,<4", "joblib>=1.3,<2"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+signlang = "signlang.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
