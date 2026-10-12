@@ -33,6 +33,8 @@ Follow the installation commands in the README. Run all commands from the reposi
 
 **Checkpoint:** help lists seven commands and tests pass. No webcam or dataset is required for the tests. Test fixtures are fabricated landmarks, not real signs.
 
+On Ubuntu, the MediaPipe native library also needs `libegl1` and `libgles2`. Install them with `sudo apt-get update` followed by `sudo apt-get install -y libegl1 libgles2`. After downloading detector assets, `python scripts/check_landmarkers.py` verifies they load and process blank frames without opening a camera.
+
 ## 3. Obtain the correct data
 
 Read [DATASET.md](DATASET.md). WLASL is American Sign Language. Do not mix ISL, ASL alphabet images, custom gestures, and WLASL labels into the same benchmark.
