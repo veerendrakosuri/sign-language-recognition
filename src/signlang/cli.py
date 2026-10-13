@@ -67,6 +67,7 @@ def parser():
             cmd.add_argument("--split", choices=["val", "test"], default="test")
             cmd.add_argument("--device", default="cpu")
     demo = commands.add_parser("webcam", help="Local camera demo; requires your trained checkpoint")
+    demo.add_argument("--kind", choices=["gru", "baseline"], default="gru")
     demo.add_argument("--checkpoint", default="runs/train/best.pt")
     demo.add_argument("--models", default="models")
     demo.add_argument("--camera", type=int, default=0)

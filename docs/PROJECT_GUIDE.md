@@ -145,11 +145,13 @@ For the five most frequent confusions, watch examples and record a hypothesis: h
 python -m signlang.cli webcam --checkpoint runs/gru-v1/best.pt --window-seconds 1.5 --threshold 0.75
 ```
 
+To compare the baseline using the same camera and preprocessing, run `python -m signlang.cli webcam --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --window-seconds 1.5 --threshold 0.75`. The baseline performed better on this run's available offline test subset; only a live trial can show which is more useful on your camera.
+
 Stand so that shoulders, elbows and hands are visible. Use one signer, a stable camera and even lighting. Perform a vocabulary word clearly, with pauses between words. Press Q or Escape to quit.
 
 The demo keeps a time-based rolling window, resamples to the training frame count, and predicts periodically. The same word must exceed the confidence threshold for three predictions before display. Missing tracking or low confidence clears the prediction. The screen is mirrored for comfort; inference uses the original frame orientation.
 
-For the current local run, execute this command from the repository root using `.\.venv\Scripts\python.exe` in place of `python`. It uses the existing local checkpoint; the camera must be available on this machine. If the window opens, try several vocabulary signs and an unknown gesture, note the on-screen FPS, and add each trial to `reports/live_test_log.csv`. If it reports that the camera cannot open, check Windows camera permissions and try `--camera 1`. No live result has been measured yet.
+For the current local run, execute either command from the repository root using `.\.venv\Scripts\python.exe` in place of `python`. Both use existing local checkpoints; the camera must be available on this machine. If the window opens, try several vocabulary signs and an unknown gesture, note the on-screen FPS, and add each trial to `reports/live_test_log.csv`. If it reports that the camera cannot open, check Windows camera permissions and try `--camera 1`. No live result has been measured yet.
 
 The 1.5-second default is only a starting value: tune window duration and threshold on validation/live development recordings, then freeze settings before your live test. Consecutive windows overlap and are not independent evidence. Displayed probabilities are not calibrated guarantees. Unknown gestures may still be misclassified.
 

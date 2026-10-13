@@ -2,6 +2,7 @@ import time
 from collections import deque
 
 import cv2
+import joblib
 import numpy as np
 import torch
 
@@ -10,10 +11,35 @@ from .landmarks import Extractor
 from .training import load_gru
 
 
+def load_demo_model(kind, checkpoint, device="cpu"):
+    if kind == "baseline":
+        # joblib uses pickle; load only checkpoints you created or trust.
+        pack = joblib.load(checkpoint)
+        return pack["model"], pack
+    if kind == "gru":
+        return load_gru(checkpoint, device)
+    raise ValueError(f"Unknown model kind: {kind}")
+
+
+def predict_window(kind, model, pack, points, masks, device="cpu"):
+    """Use the same preprocessing and class order as offline evaluation."""
+    x = prepare(points, masks, pack["frames"])
+    if kind == "baseline":
+        probabilities = np.zeros(len(pack["labels"]), np.float32)
+        probabilities[model.classes_.astype(int)] = model.predict_proba(
+            x.mean(axis=0, keepdims=True))[0]
+    else:
+        with torch.inference_mode():
+            probabilities = torch.softmax(model(torch.from_numpy(x[None]).to(device)), 1)[0]
+            probabilities = probabilities.cpu().numpy()
+    index = int(probabilities.argmax())
+    return pack["labels"][index], float(probabilities[index])
+
+
 def webcam(args):
     if args.predict_every < 1 or args.window_seconds <= 0:
         raise ValueError("predict-every and window-seconds must be positive")
-    model, pack = load_gru(args.checkpoint, args.device)
+    model, pack = load_demo_model(args.kind, args.checkpoint, args.device)
     if not 0 <= args.threshold <= 1:
         raise ValueError("threshold must be between 0 and 1")
     stable = StablePrediction(args.threshold, args.repeats)
@@ -25,7 +51,7 @@ def webcam(args):
     started, previous = time.perf_counter(), time.perf_counter()
     step, fps, shown, confidence = 0, 0.0, None, 0.0
     try:
-        with Extractor(args.models) as extractor, torch.inference_mode():
+        with Extractor(args.models) as extractor:
             while True:
                 ok, frame = cap.read()
                 if not ok:
@@ -46,11 +72,9 @@ def webcam(args):
                     points = np.stack([v[1] for v in buffer])
                     masks = np.stack([v[2] for v in buffer])
                     try:
-                        x = prepare(points, masks, pack["frames"])
-                        prob = torch.softmax(model(torch.from_numpy(x[None]).to(args.device)), 1)[0]
-                        confidence, index = prob.max(0)
-                        confidence = float(confidence)
-                        shown = stable.update(pack["labels"][int(index)], confidence)
+                        label, confidence = predict_window(
+                            args.kind, model, pack, points, masks, args.device)
+                        shown = stable.update(label, confidence)
                     except ValueError:
                         shown = None
                         stable.reset()

@@ -57,9 +57,11 @@ Obtain **pre-trimmed WLASL clips** following [dataset instructions](docs/DATASET
 .\.venv\Scripts\python.exe -m signlang.cli evaluate --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --output runs/baseline-test-v1
 .\.venv\Scripts\python.exe -m signlang.cli evaluate --kind gru --checkpoint runs/gru-v1/best.pt --output runs/gru-test-v1
 .\.venv\Scripts\python.exe -m signlang.cli webcam --checkpoint runs/gru-v1/best.pt
+.\.venv\Scripts\python.exe -m signlang.cli webcam --kind baseline --checkpoint runs/baseline-v1/baseline.joblib
 ```
 
 Use a fresh output directory for every experiment. Do not tune using test results. If starting with `--classes 10`, call the experiment **WLASL first-10 prototype**, not WLASL100.
+The two webcam commands let you compare the trained GRU with the mean-landmark baseline; run one at a time. The baseline had higher accuracy on the available offline test clips, but neither model has measured live-camera accuracy.
 
 ## Results
 

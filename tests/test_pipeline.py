@@ -43,3 +43,12 @@ def test_synthetic_end_to_end(tmp_path):
         result = json.loads((out / "metrics.json").read_text())
         assert result["samples"] == 4 and result["coverage"] == 1
         assert (out / "confusion_matrix.png").stat().st_size > 100
+        from signlang.demo import load_demo_model, predict_window
+        demo_model, pack = load_demo_model(kind, tmp_path / name)
+        with np.load(cache / "test_0_0.npz", allow_pickle=False) as z:
+            demo_label, demo_confidence = predict_window(kind, demo_model, pack,
+                                                         z["points"], z["valid"])
+        with (out / "predictions.csv").open(newline="", encoding="utf-8") as f:
+            expected = next(row for row in csv.DictReader(f) if row["video_id"] == "test_0_0")
+        assert demo_label == expected["predicted_gloss"]
+        assert abs(demo_confidence - float(expected["confidence"])) < 1e-6
