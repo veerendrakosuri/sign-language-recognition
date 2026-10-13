@@ -1,0 +1,21 @@
+{
+  "command": "train",
+  "manifest": "data/processed/manifest.csv",
+  "labels": "data/processed/labels.json",
+  "cache": "data/landmarks",
+  "output": "runs\\gru-v1",
+  "frames": 32,
+  "seed": 42,
+  "epochs": 60,
+  "batch_size": 32,
+  "hidden": 256,
+  "lr": 0.001,
+  "patience": 10,
+  "device": "cpu",
+  "mirror_probability": 0.0,
+  "manifest_sha256": "34312f1d1e6669aef93df34175ca6cf5358f33af2c947a62eba47f0f378685fe",
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "numpy": "2.5.4",
+  "sklearn": "1.9.1"
+}

@@ -2,7 +2,7 @@
 
 Recognize isolated American Sign Language (ASL) words using webcam video, MediaPipe hand/body landmarks, and a PyTorch GRU. This is an educational implementation of Project 3 from the supplied ML project guide.
 
-**Status:** implementation and learning materials provided. No WLASL-trained checkpoint or real-world accuracy is claimed. You must obtain the videos, train, and evaluate before the webcam demo can recognize signs. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
+**Status:** implementation and learning materials provided. A local training run on an incomplete WLASL100 video mirror has been evaluated; its [measured results and coverage limits](reports/wlasl100-mirror-run-2026-10-13/README.md) are below. The trained checkpoint stays local and no full WLASL100 benchmark or live-webcam accuracy is claimed. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
 
 **Start here: [complete step-by-step guide](docs/PROJECT_GUIDE.md).** It explains the concepts, every command, expected files, troubleshooting, and a three-week plan.
 
@@ -65,10 +65,10 @@ Use a fresh output directory for every experiment. Do not tune using test result
 
 | Experiment | Test coverage | Top-1 | Top-5 | Macro F1 | Live FPS |
 |---|---|---|---|---|---|
-| Logistic regression | Not evaluated | — | — | — | N/A |
-| GRU | Not evaluated | — | — | — | Not measured |
+| Logistic regression | 100/258 official test clips | 0.3200 | 0.6300 | 0.2115 | N/A |
+| GRU | 100/258 official test clips | 0.3000 | 0.6200 | 0.1993 | Not measured |
 
-Populate this table only from real evaluation output. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. Keep identical evaluated IDs for model comparisons. For fewer than five classes the reported top-k uses k = class count and is not informative.
+These are measured results on the **available subset**, not the complete WLASL100 benchmark. Both models used the same 100 test IDs; 28 of the 100 classes had no available test clip. The [run report](reports/wlasl100-mirror-run-2026-10-13/README.md) and metrics files record the denominator, missing classes, and exact IDs. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. For fewer than five classes the reported top-k uses k = class count and is not informative.
 
 ## File map
 
