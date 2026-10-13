@@ -70,6 +70,8 @@ Use a fresh output directory for every experiment. Do not tune using test result
 
 These are measured results on the **available subset**, not the complete WLASL100 benchmark. Both models used the same 100 test IDs; 28 of the 100 classes had no available test clip. The [run report](reports/wlasl100-mirror-run-2026-10-13/README.md) and metrics files record the denominator, missing classes, and exact IDs. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. For fewer than five classes the reported top-k uses k = class count and is not informative.
 
+The [landmark audit](reports/wlasl100-mirror-run-2026-10-13/landmark_audit.json) found no malformed caches, but 325 of 1,013 clips had an assigned hand in fewer than half their frames. The trained GRU checkpoint and detector assets passed local inference/startup checks. A live camera trial and ASL-qualified review of clip labels are still needed.
+
 ## File map
 
 ```text

@@ -64,6 +64,7 @@ python -m signlang.cli manifest --metadata data/WLASL_v0.3.json --videos data/vi
 ```powershell
 python -m signlang.cli download-models
 python -m signlang.cli extract
+python scripts/audit_landmarks.py
 ```
 
 The download command retrieves two Google detector assets and records SHA-256 hashes. Extraction processes video frames in timestamp order with separate trackers for every clip. A point mask records which observations are present.
@@ -71,6 +72,8 @@ The download command retrieves two Google detector assets and records SHA-256 ha
 Each cache file contains `points` with shape `(T, 75, 3)` and `valid` with shape `(T, 75)`. Slots 0–32 are pose, 33–53 left hand, 54–74 right hand. Hands are assigned to the anatomical side using pose wrists. If pose wrists are not reliable, those hands are left missing rather than guessing their identity.
 
 Inspect at least five clips per class for your small prototype. Confirm that sign motion is complete, one signer is visible, wrists and shoulders are tracked, and clips are not reversed or double-trimmed. Use the notebook to inspect cached arrays and sample frames. Read `extraction_report.json`; failed samples are counted instead of silently treated as successful data.
+
+The audit writes `runs/landmark-audit.json`. Its low-hand-coverage flags are prompts for visual review, not automatic proof that a clip or label is wrong. The [current partial-data run](../reports/wlasl100-mirror-run-2026-10-13/README.md) found 325 such flags in 1,013 caches.
 
 **Checkpoint:** each intended class has cached train examples and a useful amount of validation/test coverage. A class with no train samples stops training. Partially missing validation/test classes remain in reporting; inspect them explicitly.
 
@@ -145,6 +148,8 @@ python -m signlang.cli webcam --checkpoint runs/gru-v1/best.pt --window-seconds 
 Stand so that shoulders, elbows and hands are visible. Use one signer, a stable camera and even lighting. Perform a vocabulary word clearly, with pauses between words. Press Q or Escape to quit.
 
 The demo keeps a time-based rolling window, resamples to the training frame count, and predicts periodically. The same word must exceed the confidence threshold for three predictions before display. Missing tracking or low confidence clears the prediction. The screen is mirrored for comfort; inference uses the original frame orientation.
+
+For the current local run, execute this command from the repository root using `.\.venv\Scripts\python.exe` in place of `python`. It uses the existing local checkpoint; the camera must be available on this machine. If the window opens, try several vocabulary signs and an unknown gesture, note the on-screen FPS, and add each trial to `reports/live_test_log.csv`. If it reports that the camera cannot open, check Windows camera permissions and try `--camera 1`. No live result has been measured yet.
 
 The 1.5-second default is only a starting value: tune window duration and threshold on validation/live development recordings, then freeze settings before your live test. Consecutive windows overlap and are not independent evidence. Displayed probabilities are not calibrated guarantees. Unknown gestures may still be misclassified.
 
