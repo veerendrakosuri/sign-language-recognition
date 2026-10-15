@@ -26,3 +26,5 @@ The automated tests passed (9/9), the MediaPipe detector assets loaded, and the 
 The webcam command can now load either the GRU or the baseline checkpoint with `--kind baseline`. Both paths use the same normalized 32-frame landmarks as evaluation. The baseline option is available because it outperformed the GRU offline on this partial test subset; that does not predict its live-camera ranking.
 
 Before presenting this as a full project result, have an ASL-qualified reviewer check clip labels and complete sign boundaries, recover missing videos where permitted, rerun training and held-out evaluation on the improved coverage, and measure the webcam demo's FPS and failure cases. Do not present these partial-data numbers as the official WLASL100 score.
+
+An [offline follow-up](followup_2026-10-15.md) documents a validation-only feature comparison and an exploratory diagnosis of hand-tracking losses after the first informal webcam feedback. No new test score or live accuracy claim was added.

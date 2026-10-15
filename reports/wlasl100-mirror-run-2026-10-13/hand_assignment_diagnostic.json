@@ -1,0 +1,56 @@
+[
+  {
+    "video_id": "24636",
+    "gloss": "give",
+    "frames": 92,
+    "raw_hand_fraction": 0.772,
+    "assigned_hand_fraction": 0.054,
+    "raw_detected_but_unassigned_fraction": 0.717,
+    "any_wrist_fraction": 0.228
+  },
+  {
+    "video_id": "65506",
+    "gloss": "dog",
+    "frames": 75,
+    "raw_hand_fraction": 0.32,
+    "assigned_hand_fraction": 0.227,
+    "raw_detected_but_unassigned_fraction": 0.093,
+    "any_wrist_fraction": 0.253
+  },
+  {
+    "video_id": "63664",
+    "gloss": "woman",
+    "frames": 121,
+    "raw_hand_fraction": 0.281,
+    "assigned_hand_fraction": 0.256,
+    "raw_detected_but_unassigned_fraction": 0.025,
+    "any_wrist_fraction": 0.264
+  },
+  {
+    "video_id": "14685",
+    "gloss": "dark",
+    "frames": 99,
+    "raw_hand_fraction": 0.424,
+    "assigned_hand_fraction": 0.414,
+    "raw_detected_but_unassigned_fraction": 0.01,
+    "any_wrist_fraction": 0.475
+  },
+  {
+    "video_id": "32157",
+    "gloss": "language",
+    "frames": 48,
+    "raw_hand_fraction": 0.75,
+    "assigned_hand_fraction": 0.729,
+    "raw_detected_but_unassigned_fraction": 0.021,
+    "any_wrist_fraction": 0.75
+  },
+  {
+    "video_id": "32246",
+    "gloss": "last",
+    "frames": 97,
+    "raw_hand_fraction": 0.67,
+    "assigned_hand_fraction": 0.649,
+    "raw_detected_but_unassigned_fraction": 0.021,
+    "any_wrist_fraction": 0.649
+  }
+]
