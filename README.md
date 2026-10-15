@@ -1,6 +1,8 @@
-# Real-time sign language recognition
+# Isolated ASL Recognition Toolkit
 
-Recognize isolated American Sign Language (ASL) words using webcam video, MediaPipe hand/body landmarks, and a PyTorch GRU. This is an educational implementation of Project 3 from the supplied ML project guide.
+A developer-focused Python toolkit and CLI for isolated American Sign Language (ASL) word recognition: prepare datasets, extract hand/body landmarks, train baseline and GRU models, and evaluate predictions. This is an educational implementation of Project 3 from the supplied ML project guide.
+
+**Locked project direction:** the open-source Python package and CLI are the primary deliverable. The existing website is the demonstration interface. The [agreed scope and release plan](docs/PROJECT_DIRECTION.md) distinguish existing functionality from the work required for a packaged release.
 
 **[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
 
