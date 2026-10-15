@@ -4,6 +4,8 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 
 **Locked project direction:** the open-source Python package and CLI are the primary deliverable. The existing website is the demonstration interface. The [agreed scope and release plan](docs/PROJECT_DIRECTION.md) distinguish existing functionality from the work required for a packaged release.
 
+**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.2.0 adds `SignRecognizer`, `signlang predict`, and `signlang export-model`. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
+
 **[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
 
 **Status:** implementation, training/evaluation materials, and a browser research preview are provided. A local training run on an incomplete WLASL100 video mirror has been evaluated; its [measured results and coverage limits](reports/wlasl100-mirror-run-2026-10-13/README.md) are below. The original checkpoint stays local, while the evaluated baseline's numeric weights are exported for the [web app](web/README.md). No full WLASL100 benchmark, browser-upload accuracy, or live-webcam accuracy is claimed. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
@@ -13,6 +15,8 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 ## What is included
 
 - Official WLASL split manifest and missing-video coverage report.
+- Python inference API and saved-video/landmark CLI prediction with ranked JSON results.
+- Numeric JSON baseline export, explicit joblib trust, model hashes, and tracking diagnostics.
 - MediaPipe Tasks extraction: 33 pose + 21 left-hand + 21 right-hand points.
 - Shared normalization, missing-point masks, and 32-frame resampling.
 - Mean-landmark logistic regression baseline and two-layer GRU.
@@ -59,10 +63,10 @@ Obtain **pre-trimmed WLASL clips** following [dataset instructions](docs/DATASET
 .\.venv\Scripts\python.exe -m signlang.cli extract
 .\.venv\Scripts\python.exe -m signlang.cli baseline --output runs/baseline-v1
 .\.venv\Scripts\python.exe -m signlang.cli train --output runs/gru-v1
-.\.venv\Scripts\python.exe -m signlang.cli evaluate --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --output runs/baseline-test-v1
+.\.venv\Scripts\python.exe -m signlang.cli evaluate --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --output runs/baseline-test-v1 --trust-checkpoint
 .\.venv\Scripts\python.exe -m signlang.cli evaluate --kind gru --checkpoint runs/gru-v1/best.pt --output runs/gru-test-v1
 .\.venv\Scripts\python.exe -m signlang.cli webcam --checkpoint runs/gru-v1/best.pt
-.\.venv\Scripts\python.exe -m signlang.cli webcam --kind baseline --checkpoint runs/baseline-v1/baseline.joblib
+.\.venv\Scripts\python.exe -m signlang.cli webcam --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --trust-checkpoint
 ```
 
 Use a fresh output directory for every experiment. Do not tune using test results. If starting with `--classes 10`, call the experiment **WLASL first-10 prototype**, not WLASL100.

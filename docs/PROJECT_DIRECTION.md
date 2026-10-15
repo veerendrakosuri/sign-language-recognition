@@ -27,7 +27,9 @@ Complete these in order, with tested behavior and documentation at each step:
 6. Add an explicit source-code license, contribution guidance, changelog, and separate dataset/model notices. Verify model distribution permissions and package-name availability before a registry release.
 7. Publish a versioned package release and update GitHub installation examples and the website's links.
 
-`predict`, JSON output, the public Python API, and a package-registry release are planned work, not existing capabilities. The package name on a registry is not reserved yet.
+Version 0.2.0 implements `predict`, structured JSON output, the public Python API, numeric baseline export, optional dependency groups, distribution validation, and clean-install checks. It adds an MIT license for original source code and separate dataset/model notices. See the [package guide](PACKAGE_GUIDE.md) and [changelog](../CHANGELOG.md).
+
+Distribute the alpha wheel and source archive through GitHub Releases. Package-registry publication remains a separate step requiring verified package-name ownership and publisher setup; no PyPI name is reserved or PyPI release claimed. Keep trained weights and datasets out of package distributions while their rights and quality remain unresolved.
 
 ## Evidence and boundaries
 

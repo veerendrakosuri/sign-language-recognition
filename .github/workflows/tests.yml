@@ -3,6 +3,32 @@ on: [push, pull_request]
 permissions:
   contents: read
 jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - run: python -m pip install build twine pytest
+      - run: python -m build
+      - run: python -m twine check dist/*
+      - run: python scripts/check_distribution.py
+      - run: python -c "import glob,subprocess,sys; subprocess.check_call([sys.executable,'-m','pip','install',glob.glob('dist/*.whl')[0]])"
+      - run: python -m pytest tests/test_api.py tests/test_cli.py tests/test_features.py -q
+      - run: python -c "from pathlib import Path; Path('.release-work').mkdir(exist_ok=True)"
+      - run: python -I ../scripts/smoke_installed.py
+        working-directory: .release-work
+      - uses: actions/upload-artifact@v4
+        with:
+          name: package-${{ matrix.os }}-${{ matrix.python }}
+          path: dist/*
   tests:
     runs-on: ubuntu-latest
     steps:

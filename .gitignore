@@ -21,3 +21,7 @@ dist/
 /.site-deploy/
 /.site-archive.tar
 .pytest-tmp/
+.pytest-tmp-*/
+build/
+.package-venv*/
+.release-work/

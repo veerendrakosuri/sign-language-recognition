@@ -39,7 +39,8 @@ def test_synthetic_end_to_end(tmp_path):
     run("train", *common, "--output", str(tmp_path / "gru"), "--epochs", "2", "--hidden", "8", "--batch-size", "4")
     for kind, name in [("baseline", "baseline/baseline.joblib"), ("gru", "gru/best.pt")]:
         out = tmp_path / f"eval_{kind}"
-        run("evaluate", *common, "--kind", kind, "--checkpoint", str(tmp_path / name), "--output", str(out))
+        trust = ["--trust-checkpoint"] if kind == "baseline" else []
+        run("evaluate", *common, "--kind", kind, "--checkpoint", str(tmp_path / name), "--output", str(out), *trust)
         result = json.loads((out / "metrics.json").read_text())
         assert result["samples"] == 4 and result["coverage"] == 1
         assert (out / "confusion_matrix.png").stat().st_size > 100
@@ -52,3 +53,16 @@ def test_synthetic_end_to_end(tmp_path):
             expected = next(row for row in csv.DictReader(f) if row["video_id"] == "test_0_0")
         assert demo_label == expected["predicted_gloss"]
         assert abs(demo_confidence - float(expected["confidence"])) < 1e-6
+        from signlang import SignRecognizer, export_baseline
+        recognizer = SignRecognizer.from_model(tmp_path / name, trusted=(kind == "baseline"))
+        with np.load(cache / "test_0_0.npz", allow_pickle=False) as z:
+            result = recognizer.predict_landmarks(z["points"], z["valid"])
+        assert result.predictions[0].label == expected["predicted_gloss"]
+        assert abs(result.predictions[0].score - float(expected["confidence"])) < 1e-6
+        if kind == "baseline":
+            exported = export_baseline(tmp_path / name, tmp_path / "binary-model.json", trusted=True)
+            numeric = SignRecognizer.from_model(exported)
+            with np.load(cache / "test_0_0.npz", allow_pickle=False) as z:
+                exported_result = numeric.predict_landmarks(z["points"], z["valid"])
+            assert exported_result.predictions[0].label == result.predictions[0].label
+            assert abs(exported_result.predictions[0].score - result.predictions[0].score) < 1e-6

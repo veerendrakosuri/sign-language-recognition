@@ -31,7 +31,7 @@ Follow the installation commands in the README. Run all commands from the reposi
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-**Checkpoint:** help lists seven commands and tests pass. No webcam or dataset is required for the tests. Test fixtures are fabricated landmarks, not real signs.
+**Checkpoint:** help lists prediction/export and experiment commands, and tests pass. No webcam or dataset is required for the tests. Test fixtures are fabricated landmarks, not real signs. See the [package guide](PACKAGE_GUIDE.md) for the public API, optional dependencies, and saved-video JSON output.
 
 On Ubuntu, the MediaPipe native library also needs `libegl1` and `libgles2`. Install them with `sudo apt-get update` followed by `sudo apt-get install -y libegl1 libgles2`. After downloading detector assets, `python scripts/check_landmarkers.py` verifies they load and process blank frames without opening a camera.
 
@@ -129,7 +129,7 @@ For a GPU environment with a compatible CUDA PyTorch installation, add `--device
 Finalize settings using validation, then evaluate the selected baseline and GRU once on test:
 
 ```powershell
-python -m signlang.cli evaluate --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --output runs/baseline-test-v1
+python -m signlang.cli evaluate --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --output runs/baseline-test-v1 --trust-checkpoint
 python -m signlang.cli evaluate --kind gru --checkpoint runs/gru-v1/best.pt --output runs/gru-test-v1
 ```
 
@@ -145,7 +145,7 @@ For the five most frequent confusions, watch examples and record a hypothesis: h
 python -m signlang.cli webcam --checkpoint runs/gru-v1/best.pt --window-seconds 1.5 --threshold 0.75
 ```
 
-To compare the baseline using the same camera and preprocessing, run `python -m signlang.cli webcam --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --window-seconds 1.5 --threshold 0.75`. The baseline performed better on this run's available offline test subset; only a live trial can show which is more useful on your camera.
+To compare the baseline using the same camera and preprocessing, run `python -m signlang.cli webcam --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --window-seconds 1.5 --threshold 0.75 --trust-checkpoint`. The baseline performed better on this run's available offline test subset; only a live trial can show which is more useful on your camera. Pass the trust flag only for a checkpoint you created or otherwise trust.
 
 Stand so that shoulders, elbows and hands are visible. Use one signer, a stable camera and even lighting. Perform a vocabulary word clearly, with pauses between words. Press Q or Escape to quit.
 

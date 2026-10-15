@@ -9,6 +9,8 @@
 | `train` | `best.pt`, `history.csv`, `config.json`, `sample_ids.json` | Best validation checkpoint and learning history |
 | `evaluate` | `metrics.json`, `classification_report.json`, `predictions.csv`, `confusion_matrix.csv`, `confusion_matrix.png`, `results.md` | Measured performance and failure analysis |
 | `webcam` | Live local window only | Sign, uncertainty, confidence, FPS; Q exits |
+| `predict` | JSON on stdout or a new `--output` file | Ranked labels, model fingerprint, tracking coverage, and preprocessing metadata |
+| `export-model` | A new numeric JSON baseline file | Share a supported model without Python pickle; separate model terms still apply |
 | `python scripts/audit_landmarks.py` | `runs/landmark-audit.json` by default | Cache integrity, tracking coverage, and clips to review |
 | `python scripts/export_web_model.py` | `web/public/model.json` | Browser-readable numeric baseline weights and source checkpoint hash |
 | `cd web; npm test; npm run build` | `web/dist/` | Static research-preview app for public hosting |

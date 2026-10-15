@@ -1,3 +1,8 @@
-"""An educational isolated ASL word recognition pipeline."""
+"""Developer toolkit for experimental isolated ASL word recognition."""
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
+
+from .api import Prediction, RecognitionResult, SignRecognizer, extract_landmarks
+from .serialization import export_baseline
+
+__all__ = ["Prediction", "RecognitionResult", "SignRecognizer", "extract_landmarks", "export_baseline", "__version__"]
