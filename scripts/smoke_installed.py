@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import sysconfig
 import tempfile
 
 import numpy as np
@@ -18,7 +19,7 @@ def main():
     assert "site-packages" in str(Path(signlang.__file__).resolve()), signlang.__file__
     for optional in ("torch", "sklearn", "cv2", "mediapipe"):
         assert importlib.util.find_spec(optional) is None, f"Core install unexpectedly includes {optional}"
-    console = Path(sys.executable).parent / ("signlang.exe" if sys.platform == "win32" else "signlang")
+    console = Path(sysconfig.get_path("scripts")) / ("signlang.exe" if sys.platform == "win32" else "signlang")
     subprocess.run([str(console), "--version"], check=True)
     with tempfile.TemporaryDirectory(dir=Path.cwd()) as folder:
         root = Path(folder)
