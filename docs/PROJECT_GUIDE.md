@@ -167,7 +167,7 @@ Record a brief demo only after you have a real trained model. Show successful an
 
 Use [REPORT_TEMPLATE.md](REPORT_TEMPLATE.md) and [MODEL_CARD.md](MODEL_CARD.md). Include the problem, dataset coverage, method, baseline comparison, confusion analysis, live tests, limitations and next steps. Cite WLASL and MediaPipe. Replace every result placeholder with a measured value or 'not measured'.
 
-Copy selected non-sensitive evaluation reports into a reviewed `reports/final/` directory if you want them on GitHub. Raw videos, caches and checkpoints remain ignored. Check dataset terms before sharing derived artifacts. Save dependency versions with `python -m pip freeze > runs/environment.txt`.
+Copy selected non-sensitive evaluation reports into a reviewed `reports/final/` directory if you want them on GitHub. Raw videos, caches and original Python checkpoints remain ignored. The research-preview browser app includes exported numeric baseline weights; see [its limitations and build steps](../web/README.md). Check dataset terms before sharing derived artifacts. Save dependency versions with `python -m pip freeze > runs/environment.txt`.
 
 Resume sentence to fill only after evaluation: “Built an isolated ASL word classifier on [subset and available test count], comparing a landmark GRU with logistic regression; measured [top-1], [top-5] and [FPS] on [hardware].”
 

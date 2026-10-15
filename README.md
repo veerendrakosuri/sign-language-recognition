@@ -2,7 +2,9 @@
 
 Recognize isolated American Sign Language (ASL) words using webcam video, MediaPipe hand/body landmarks, and a PyTorch GRU. This is an educational implementation of Project 3 from the supplied ML project guide.
 
-**Status:** implementation and learning materials provided. A local training run on an incomplete WLASL100 video mirror has been evaluated; its [measured results and coverage limits](reports/wlasl100-mirror-run-2026-10-13/README.md) are below. The trained checkpoint stays local and no full WLASL100 benchmark or live-webcam accuracy is claimed. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
+**[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
+
+**Status:** implementation, training/evaluation materials, and a browser research preview are provided. A local training run on an incomplete WLASL100 video mirror has been evaluated; its [measured results and coverage limits](reports/wlasl100-mirror-run-2026-10-13/README.md) are below. The original checkpoint stays local, while the evaluated baseline's numeric weights are exported for the [web app](web/README.md). No full WLASL100 benchmark, browser-upload accuracy, or live-webcam accuracy is claimed. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
 
 **Start here: [complete step-by-step guide](docs/PROJECT_GUIDE.md).** It explains the concepts, every command, expected files, troubleshooting, and a three-week plan.
 
@@ -15,6 +17,7 @@ Recognize isolated American Sign Language (ASL) words using webcam video, MediaP
 - Validation-based model selection, reproducible seeds, saved configurations.
 - Top-1/top-5 accuracy, macro F1, per-class metrics, predictions, and confusion matrices.
 - Local webcam demo with temporal smoothing, uncertain state, and FPS display.
+- Browser upload app for one isolated ASL word, processed on the visitor's device.
 - Automated tests, CI, a starter notebook, experiment templates, and report guidance.
 
 ```mermaid
@@ -70,7 +73,7 @@ The two webcam commands let you compare the trained GRU with the mean-landmark b
 | Logistic regression | 100/258 official test clips | 0.3200 | 0.6300 | 0.2115 | N/A |
 | GRU | 100/258 official test clips | 0.3000 | 0.6200 | 0.1993 | Not measured |
 
-These are measured results on the **available subset**, not the complete WLASL100 benchmark. Both models used the same 100 test IDs; 28 of the 100 classes had no available test clip. The [run report](reports/wlasl100-mirror-run-2026-10-13/README.md) and metrics files record the denominator, missing classes, and exact IDs. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. For fewer than five classes the reported top-k uses k = class count and is not informative.
+These are measured results on the **available subset**, not the complete WLASL100 benchmark. Both models used the same 100 test IDs; 28 of the 100 classes had no available test clip. The browser app samples video frames differently from the offline evaluator, so its real-world upload accuracy is unknown. The [run report](reports/wlasl100-mirror-run-2026-10-13/README.md) and metrics files record the denominator, missing classes, and exact IDs. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. For fewer than five classes the reported top-k uses k = class count and is not informative.
 
 The [landmark audit](reports/wlasl100-mirror-run-2026-10-13/landmark_audit.json) found no malformed caches, but 325 of 1,013 clips had an assigned hand in fewer than half their frames. The trained GRU checkpoint and detector assets passed local inference/startup checks. A live camera trial and ASL-qualified review of clip labels are still needed.
 
@@ -85,6 +88,7 @@ reports/           editable experiment and live-test templates
 data/              your videos, metadata, cached landmarks (ignored)
 models/            downloaded MediaPipe assets (ignored)
 runs/              checkpoints and experiment results (ignored)
+web/               browser app, exported numeric baseline weights, tests
 ```
 
 See [output file reference](docs/OUTPUTS.md) for every generated artifact.
@@ -93,7 +97,7 @@ See [output file reference](docs/OUTPUTS.md) for every generated artifact.
 
 This is **isolated ASL word classification**, not full-sentence translation, fingerspelling recognition, or Indian Sign Language recognition. ASL and ISL are different languages. The model only predicts its trained vocabulary. A softmax threshold is a heuristic and can still accept unknown gestures confidently. A rolling webcam window has no learned sign-boundary detector. No face mesh is used, so facial grammar is absent. Actual accuracy and speed depend on data coverage, signer, camera, and hardware.
 
-Raw videos, personal webcam recordings, model weights, and the original supplied guide are not published in this repository. Review the upstream dataset terms before use or redistribution. No commercial-use permission is implied for WLASL or derived artifacts.
+Raw videos, personal webcam recordings, the original Python checkpoints, and the original supplied guide are not published in this repository. The web app includes the evaluated baseline's numeric weights and does not upload visitor videos. Review the upstream dataset terms before use or redistribution. No commercial-use permission is implied for WLASL or derived artifacts.
 
 ## Sources
 

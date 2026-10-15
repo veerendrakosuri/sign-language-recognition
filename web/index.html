@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c27">
+  <meta name="description" content="An experimental, browser-based isolated ASL word recognizer trained on an incomplete WLASL100 mirror.">
+  <title>SignLab · Isolated ASL word demo</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="SignLab home"><span class="brand-mark">S</span><span>SignLab</span></a>
+    <nav aria-label="Main navigation"><a href="#try">Try the demo</a><a href="#how">How it works</a><a href="https://github.com/veerendrakosuri/sign-language-recognition" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> RESEARCH PREVIEW · WLASL100</p>
+        <h1 id="hero-title">Explore signs.<br><em>See what the model sees.</em></h1>
+        <p class="hero-intro">Upload a short video of one isolated American Sign Language word. The model reads body and hand landmarks in your browser and suggests a word from its 100-word vocabulary.</p>
+        <a class="primary-link" href="#try">Try a video <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <svg viewBox="0 0 320 340" fill="none" role="img">
+          <path d="M160 316V190M160 190L98 154M160 190L224 154M160 190L130 268M160 190L194 268" stroke="#a6bbad" stroke-width="12" stroke-linecap="round"/>
+          <circle cx="160" cy="93" r="42" stroke="#a6bbad" stroke-width="12"/>
+          <path d="M94 154L74 112L50 77M224 154L247 112L278 76" stroke="#a6bbad" stroke-width="12" stroke-linecap="round"/>
+          <g fill="#d9f37b"><circle cx="160" cy="190" r="9"/><circle cx="98" cy="154" r="9"/><circle cx="224" cy="154" r="9"/><circle cx="74" cy="112" r="9"/><circle cx="247" cy="112" r="9"/><circle cx="50" cy="77" r="9"/><circle cx="278" cy="76" r="9"/></g>
+          <path d="M36 77L30 44M50 76L52 37M61 82L76 48M280 76L295 47M266 80L260 42M289 86L312 61" stroke="#d9f37b" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        <div class="visual-label"><span class="label-dot"></span> BODY + HAND LANDMARKS</div>
+      </div>
+    </section>
+
+    <section class="try-section" id="try" aria-labelledby="try-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / TEST THE MODEL</p><h2 id="try-title">One sign. One short video.</h2></div><p>Use a trimmed clip containing one complete sign. Keep your shoulders and both hands visible, with a steady camera and good light.</p></div>
+      <div class="workbench">
+        <div class="upload-panel">
+          <label class="dropzone" id="dropzone" for="video-file">
+            <span class="upload-symbol" aria-hidden="true">↑</span>
+            <strong>Choose a sign video</strong>
+            <span>MP4 or WebM · 0.5–30 seconds · processed on your device</span>
+            <span class="choose-button">Browse files</span>
+          </label>
+          <input id="video-file" type="file" accept="video/mp4,video/webm,video/quicktime" aria-describedby="upload-note">
+          <p id="upload-note" class="subnote">Nothing is uploaded to our server. A compatible browser and an internet connection are needed to load the detector models.</p>
+          <div id="preview-wrap" class="preview-wrap" hidden><video id="preview" playsinline controls preload="metadata" aria-label="Selected sign video"></video><p id="file-name" class="file-name"></p></div>
+          <button id="analyze" class="analyze-button" type="button" disabled>Analyze sign <span aria-hidden="true">→</span></button>
+          <p id="status" class="status" role="status" aria-live="polite">Select a video to begin.</p>
+          <div id="progress-wrap" class="progress-wrap" hidden><div id="progress-bar" class="progress-bar"></div></div>
+        </div>
+        <div class="result-panel" id="result-panel" aria-live="polite">
+          <p class="eyebrow">MODEL OUTPUT</p>
+          <div id="empty-result" class="empty-result"><span class="pulse-ring">?</span><h3>Your result appears here</h3><p>The app checks 32 frames, tracks your pose and hands, and compares the movement with its trained vocabulary.</p></div>
+          <div id="result" hidden><p class="result-kicker">TOP SUGGESTION</p><h3 id="top-label"></h3><p id="top-score" class="top-score"></p><div id="alternatives" class="alternatives"></div><p class="result-note">Scores are model estimates, not verified confidence. If the sign is outside this vocabulary, the model can still guess a wrong word.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="how" aria-labelledby="how-title"><div class="section-heading"><div><p class="eyebrow">02 / UNDER THE HOOD</p><h2 id="how-title">From motion to a suggestion.</h2></div></div><div class="steps"><article><span class="step-num">01</span><h3>Pick a clip</h3><p>Record or upload one isolated ASL word. A full sentence is outside this model’s scope.</p></article><article><span class="step-num">02</span><h3>Find landmarks</h3><p>MediaPipe estimates 33 body and 21 points on each detected hand. Your frames stay in the browser.</p></article><article><span class="step-num">03</span><h3>Compare patterns</h3><p>The same normalization and trained logistic baseline used in local evaluation rank 100 candidate words.</p></article></div></section>
+
+    <section class="evidence" aria-labelledby="evidence-title"><div><p class="eyebrow">03 / READ THE RESULTS HONESTLY</p><h2 id="evidence-title">Useful experiment.<br><em>Early evidence.</em></h2><p>This is an educational prototype, not an interpreter or accessibility service. The incomplete video mirror and weak hand tracking limit performance. Browser-upload accuracy has not yet been measured. It must not be relied on for communication, medical, legal, or safety decisions.</p><a href="https://github.com/veerendrakosuri/sign-language-recognition/blob/main/reports/wlasl100-mirror-run-2026-10-13/README.md" target="_blank" rel="noopener noreferrer">Read the full evaluation ↗</a></div><div class="metrics"><div><strong>32%</strong><span>top-1 on the available offline test clips</span></div><div><strong>100 / 258</strong><span>official test clips available for evaluation</span></div><div><strong>100</strong><span>trained word classes, not complete ASL</span></div></div></section>
+  </main>
+  <footer><span>SignLab · An educational ASL recognition project</span><span>WLASL data: academic and computational use only · <a href="https://github.com/dxli94/WLASL" target="_blank" rel="noopener noreferrer">Dataset terms ↗</a></span></footer>
+</body>
+</html>
