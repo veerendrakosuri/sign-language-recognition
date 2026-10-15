@@ -1,6 +1,8 @@
 """Run outside the source checkout with the freshly installed wheel's Python."""
 import importlib.metadata
 import importlib.util
+import csv
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -44,6 +46,23 @@ def main():
         dependency = subprocess.run([str(console), "predict", str(video), "--checkpoint", str(model)],
                                    capture_output=True, text=True)
         assert dependency.returncode == 1 and "[vision]" in dependency.stderr
+        manifest = root / "manifest.csv"
+        with manifest.open("w", newline="", encoding="utf-8") as stream:
+            writer = csv.DictWriter(stream, fieldnames=["video_id", "gloss", "split"])
+            writer.writeheader()
+            writer.writerow({"video_id": "synthetic", "gloss": "fabricated_a", "split": "train"})
+        landmark_cache = root / "landmarks"
+        landmark_cache.mkdir()
+        np.savez(landmark_cache / "synthetic.npz", points=points, valid=valid)
+        (landmark_cache / "provenance.json").write_text(json.dumps({
+            "manifest_sha256": hashlib.sha256(manifest.read_bytes()).hexdigest()
+        }), encoding="utf-8")
+        audit_path = root / "audit.json"
+        audit = subprocess.run([str(console), "audit", "--manifest", str(manifest),
+                    "--cache", str(landmark_cache), "--output", str(audit_path)],
+                    check=True, capture_output=True, text=True)
+        assert json.loads(audit.stdout)["cached_clips"] == 1
+        assert json.loads(audit_path.read_text(encoding="utf-8"))["malformed_cache_count"] == 0
     print(f"Installed core API, CLI, and optional-dependency errors passed using synthetic inputs: {signlang.__file__}")
 
 

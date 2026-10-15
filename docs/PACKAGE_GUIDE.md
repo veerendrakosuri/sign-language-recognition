@@ -1,18 +1,18 @@
 # Python package and CLI guide
 
-Version 0.2.0 is an alpha developer toolkit for isolated ASL words. It exposes saved-video prediction, landmark extraction, model export, and the existing training/evaluation workflows. Recognition remains experimental; package checks are not accuracy measurements.
+Version 0.2.1 is an alpha developer toolkit for isolated ASL words. It exposes saved-video prediction, landmark extraction and audit, model export, and the existing training/evaluation workflows. Recognition remains experimental; package checks are not accuracy measurements.
 
 ## Install
 
 Use Python 3.10–3.12 in a virtual environment. The release wheel has no bundled models or datasets. Install it from GitHub Releases:
 
 ```sh
-python -m pip install "sign-language-recognition[vision] @ https://github.com/veerendrakosuri/sign-language-recognition/releases/download/v0.2.0/sign_language_recognition-0.2.0-py3-none-any.whl"
+python -m pip install "sign-language-recognition[vision] @ https://github.com/veerendrakosuri/sign-language-recognition/releases/download/v0.2.1/sign_language_recognition-0.2.1-py3-none-any.whl"
 signlang --version
 signlang --help
 ```
 
-Alternatively, clone the repository, check out `v0.2.0`, and run `python -m pip install ".[vision]"` from its root. Package-registry publication is not claimed; do not assume a same-named PyPI project belongs to this repository.
+Alternatively, clone the repository, check out `v0.2.1`, and run `python -m pip install ".[vision]"` from its root. Package-registry publication is not claimed; do not assume a same-named PyPI project belongs to this repository.
 
 | Install choice | Purpose |
 |---|---|
@@ -108,6 +108,8 @@ The NPZ must contain numeric `points` and boolean `valid` arrays in the document
 | 130 | User interruption |
 
 Use `signlang COMMAND --help` for the existing manifest, extract, baseline, train, evaluate, and webcam options. Baseline training and evaluation currently use the `train` extra; webcam needs `vision` plus the checkpoint backend. The owner has deferred the live-webcam trial.
+
+Before training, run `signlang audit --output runs/landmark-audit-v1.json`. It validates cache structure and manifest provenance, reports missing caches, and lists clips with weak hand or shoulder tracking for review. It never replaces an existing report.
 
 ## Build and verify
 

@@ -5,13 +5,14 @@
 | `download-models` | `models/*.task`, `model_sources.json` | Google's detectors and source hashes |
 | `manifest` | `manifest.csv`, `labels.json`, `coverage.json` | Official splits, class mapping, availability audit |
 | `extract` | `<video_id>.npz`, `provenance.json`, `extraction_report.json` | Cached landmarks/masks and extraction failures |
+| `audit` | A new JSON report | Cache integrity, missing clips, tracking percentiles and review candidates |
 | `baseline` | `baseline.joblib`, `validation.json`, `config.json`, `sample_ids.json` | Selected baseline and run audit |
 | `train` | `best.pt`, `history.csv`, `config.json`, `sample_ids.json` | Best validation checkpoint and learning history |
 | `evaluate` | `metrics.json`, `classification_report.json`, `predictions.csv`, `confusion_matrix.csv`, `confusion_matrix.png`, `results.md` | Measured performance and failure analysis |
 | `webcam` | Live local window only | Sign, uncertainty, confidence, FPS; Q exits |
 | `predict` | JSON on stdout or a new `--output` file | Ranked labels, model fingerprint, tracking coverage, and preprocessing metadata |
 | `export-model` | A new numeric JSON baseline file | Share a supported model without Python pickle; separate model terms still apply |
-| `python scripts/audit_landmarks.py` | `runs/landmark-audit.json` by default | Cache integrity, tracking coverage, and clips to review |
+| `python scripts/audit_landmarks.py` | `runs/landmark-audit.json` by default | Compatibility script for the same cache audit |
 | `python scripts/export_web_model.py` | `web/public/model.json` | Browser-readable numeric baseline weights and source checkpoint hash |
 | `cd web; npm test; npm run build` | `web/dist/` | Static research-preview app for public hosting |
 

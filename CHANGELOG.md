@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 — 2026-10-15
+
+- Add `signlang audit` as a supported cache-integrity and landmark-tracking quality command.
+- Add a manually gated PyPI trusted-publishing workflow and maintainer setup guide.
+
 ## 0.2.0 — 2026-10-15
 
 - Add `SignRecognizer`, typed prediction results, landmark extraction, and baseline export to the public Python API.

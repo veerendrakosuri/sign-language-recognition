@@ -62,6 +62,10 @@ def parser():
     extract.add_argument("--manifest", default="data/processed/manifest.csv")
     extract.add_argument("--cache", default="data/landmarks")
     extract.add_argument("--models", default="models")
+    audit = commands.add_parser("audit", help="Validate cached landmarks and report tracking quality")
+    audit.add_argument("--manifest", default="data/processed/manifest.csv")
+    audit.add_argument("--cache", default="data/landmarks")
+    audit.add_argument("--output", default="runs/landmark-audit.json")
     for name in ("baseline", "train", "evaluate"):
         cmd = commands.add_parser(name)
         cmd.add_argument("--manifest", default="data/processed/manifest.csv")
@@ -145,6 +149,13 @@ def _run(args):
     elif args.command == "extract":
         from .landmarks import extract_manifest
         extract_manifest(args.manifest, args.cache, args.models)
+    elif args.command == "audit":
+        from .audit import audit_landmarks
+        report = audit_landmarks(args.manifest, args.cache, args.output)
+        sys.stdout.write(json.dumps({
+            key: report[key] for key in
+            ("cached_clips", "missing_cache_count", "malformed_cache_count", "all")
+        }, indent=2, allow_nan=False) + "\n")
     elif args.command == "baseline":
         from .training import train_baseline
         train_baseline(args)

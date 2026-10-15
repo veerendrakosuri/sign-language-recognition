@@ -1,6 +1,6 @@
 # Isolated ASL Recognition Toolkit
 
-A Python API and `signlang` CLI for experimental isolated ASL word recognition, landmark extraction, training, and reproducible evaluation. Python 3.10–3.12. Version 0.2.0 is an alpha release.
+A Python API and `signlang` CLI for experimental isolated ASL word recognition, landmark extraction, training, and reproducible evaluation. Python 3.10–3.12. Version 0.2.1 is an alpha release.
 
 Install from the [GitHub releases](https://github.com/veerendrakosuri/sign-language-recognition/releases) wheel, or from the repository using `python -m pip install .`. Package-registry publication is not claimed.
 

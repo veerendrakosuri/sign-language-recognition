@@ -1,6 +1,6 @@
 """Developer toolkit for experimental isolated ASL word recognition."""
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 from .api import Prediction, RecognitionResult, SignRecognizer, extract_landmarks
 from .serialization import export_baseline

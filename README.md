@@ -4,7 +4,7 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 
 **Locked project direction:** the open-source Python package and CLI are the primary deliverable. The existing website is the demonstration interface. The [agreed scope and release plan](docs/PROJECT_DIRECTION.md) distinguish existing functionality from the work required for a packaged release.
 
-**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.2.0 adds `SignRecognizer`, `signlang predict`, and `signlang export-model`. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
+**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.2.1 includes `SignRecognizer`, prediction/model-export commands, and the cache-quality audit. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
 
 **[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
 
@@ -25,6 +25,7 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 - Local webcam demo with temporal smoothing, uncertain state, and FPS display.
 - Browser upload app for one isolated ASL word, processed on the visitor's device.
 - Automated tests, CI, a starter notebook, experiment templates, and report guidance.
+- Cache-quality auditing and a token-free, manually gated PyPI publishing workflow.
 
 ```mermaid
 flowchart LR
@@ -61,6 +62,7 @@ Obtain **pre-trimmed WLASL clips** following [dataset instructions](docs/DATASET
 ```powershell
 .\.venv\Scripts\python.exe -m signlang.cli manifest --metadata data/WLASL_v0.3.json --videos data/videos --classes 100
 .\.venv\Scripts\python.exe -m signlang.cli extract
+.\.venv\Scripts\python.exe -m signlang.cli audit --output runs/landmark-audit-v1.json
 .\.venv\Scripts\python.exe -m signlang.cli baseline --output runs/baseline-v1
 .\.venv\Scripts\python.exe -m signlang.cli train --output runs/gru-v1
 .\.venv\Scripts\python.exe -m signlang.cli evaluate --kind baseline --checkpoint runs/baseline-v1/baseline.joblib --output runs/baseline-test-v1 --trust-checkpoint
@@ -98,6 +100,8 @@ web/               browser app, exported numeric baseline weights, tests
 ```
 
 See [output file reference](docs/OUTPUTS.md) for every generated artifact.
+
+Maintainers can follow the [PyPI trusted-publishing guide](docs/PUBLISHING.md). Account registration and the first public registry upload still require the repository owner.
 
 ## Scope and limitations
 

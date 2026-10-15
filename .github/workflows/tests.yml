@@ -21,7 +21,7 @@ jobs:
       - run: python -m twine check dist/*
       - run: python scripts/check_distribution.py
       - run: python -c "import glob,subprocess,sys; subprocess.check_call([sys.executable,'-m','pip','install',glob.glob('dist/*.whl')[0]])"
-      - run: python -m pytest tests/test_api.py tests/test_cli.py tests/test_features.py -q
+      - run: python -m pytest tests/test_api.py tests/test_audit.py tests/test_cli.py tests/test_features.py -q
       - run: python -c "from pathlib import Path; Path('.release-work').mkdir(exist_ok=True)"
       - run: python -I ../scripts/smoke_installed.py
         working-directory: .release-work

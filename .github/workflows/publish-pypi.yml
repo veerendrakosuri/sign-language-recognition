@@ -1,0 +1,64 @@
+name: Publish to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag to publish, for example v0.2.1
+        required: true
+        type: string
+      confirm:
+        description: Publish this immutable version to the public PyPI index
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    if: inputs.confirm
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install build twine
+      - name: Verify tag and package version
+        shell: python
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          import os, pathlib, tomllib
+          tag = os.environ["RELEASE_TAG"]
+          version = tomllib.loads(pathlib.Path("pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
+          if tag != f"v{version}":
+              raise SystemExit(f"Tag {tag!r} does not match package version v{version}")
+      - run: python -m build
+      - run: python -m twine check dist/*
+      - run: python scripts/check_distribution.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pypi-distributions-${{ inputs.tag }}
+          path: dist/*
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/sign-language-recognition/
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: pypi-distributions-${{ inputs.tag }}
+          path: dist
+      - name: Publish package distributions
+        uses: pypa/gh-action-pypi-publish@release/v1
