@@ -37,7 +37,7 @@ def test_json_prediction_is_ranked_serializable_and_identifies_preprocessing(tmp
     assert sum(p["score"] for p in payload["predictions"]) == pytest.approx(1)
     assert payload["model"]["kind"] == "baseline-json"
     assert len(payload["model"]["sha256"]) == 64
-    assert payload["model"]["preprocessing"] == "pose33-hands42-shoulders-v1"
+    assert payload["model"]["preprocessing"] == "pose33-hands42-shoulders-v1:zero_mean"
     assert payload["input"]["frames"] == 8
     assert payload["tracking"]["hand_frame_fraction"] == 1
     json.dumps(payload, allow_nan=False)
@@ -46,7 +46,7 @@ def test_json_prediction_is_ranked_serializable_and_identifies_preprocessing(tmp
 @pytest.mark.parametrize("updates", [
     {"schema": 2}, {"frames": 1}, {"labels": ["same", "same"]},
     {"scale": [0.] * 225}, {"weights": [[0.]]},
-    {"mean": [float("nan")] * 225},
+    {"mean": [float("nan")] * 225}, {"summary": "unknown"},
 ])
 def test_invalid_json_models_are_rejected(tmp_path, updates):
     with pytest.raises(ValueError):
@@ -58,6 +58,16 @@ def test_binary_export_uses_sigmoid_not_one_class_softmax(tmp_path):
     result = SignRecognizer.from_model(path).predict_landmarks(*frames())
     assert result.predictions[0].label == "synthetic_right"
     assert result.predictions[0].score == pytest.approx(1 / (1 + np.exp(-2)))
+
+
+def test_json_observed_mean_ignores_missing_frames(tmp_path):
+    path = write_model(tmp_path / "model.json", summary="observed_mean")
+    points, valid = frames()
+    valid[:4, 33:54] = False
+    points[:4, 33:54] = 0
+    result = SignRecognizer.from_model(path).predict_landmarks(points, valid)
+    assert result.predictions[0].score == pytest.approx(1 / (1 + np.exp(-.75)))
+    assert result.model["preprocessing"].endswith(":observed_mean")
 
 
 def test_input_validation_and_weak_tracking_warning(tmp_path):

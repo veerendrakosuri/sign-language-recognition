@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from signlang.features import normalize, mirror, prepare, StablePrediction
+from signlang.features import baseline_summary, normalize, mirror, prepare, StablePrediction
 
 
 def sample():
@@ -63,3 +63,15 @@ def test_image_translation_and_scale_invariance():
     moved[..., 2] *= 1.4
     moved[~m] = 0
     assert np.allclose(normalize(p, m), normalize(moved, m), atol=1e-6)
+
+
+def test_observed_mean_excludes_missing_landmark_frames():
+    p, m = sample()
+    m[:4, 33:54] = False
+    p[:4, 33:54] = 0
+    zero_mean = baseline_summary(p, m, frames=8, summary="zero_mean")
+    observed = baseline_summary(p, m, frames=8, summary="observed_mean")
+    assert np.allclose(observed[99:162], zero_mean[99:162] * 2)
+    assert np.all(observed[162:] == 0)
+    with pytest.raises(ValueError, match="summary"):
+        baseline_summary(p, m, summary="unknown")

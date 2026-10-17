@@ -31,6 +31,7 @@ def export(checkpoint: Path, output: Path):
         "name": "WLASL100 available-mirror baseline",
         "checkpoint_sha256": digest(checkpoint),
         "frames": pack["frames"],
+        "summary": pack.get("summary", "zero_mean"),
         "labels": labels,
         "mean": scaler.mean_.tolist(),
         "scale": scaler.scale_.tolist(),

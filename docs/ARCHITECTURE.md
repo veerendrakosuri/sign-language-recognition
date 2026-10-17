@@ -1,6 +1,6 @@
 # Architecture and implementation choices
 
-`data.py` preserves upstream class order and official splits. `landmarks.py` extracts frame-wise features with MediaPipe Tasks, using a new tracker per video. `features.py` is the single preprocessing path used by training, evaluation and live inference.
+`data.py` preserves upstream class order and official splits. `landmarks.py` extracts frame-wise features with MediaPipe Tasks, using a new tracker per video. `features.py` is the single preprocessing path used by training, evaluation and live inference. New linear baselines average each landmark over its observed frames; older checkpoints explicitly retain zero-filled averaging.
 
 ## Feature representation
 
@@ -12,7 +12,7 @@ Pose wrists assign hands by the lowest total image-distance matching within a ga
 
 ## Training
 
-Logistic regression uses StandardScaler fit on train only and class balancing. GRU uses two layers, hidden size 256 by default, dropout 0.3, and a linear classifier. AdamW optimizes class-weighted cross entropy, with gradient norm clipped to 1.0. Validation top-1 selects the saved model and early stopping. Test clips are not loaded during training.
+Logistic regression uses StandardScaler fit on train only and class balancing. Its observed-frame summary excludes a missing landmark from that landmark's denominator, while preserving zero when a landmark is never seen. GRU uses two layers, hidden size 256 by default, dropout 0.3, and a linear classifier. AdamW optimizes class-weighted cross entropy, with gradient norm clipped to 1.0. Validation top-1 selects the saved model and early stopping. Test clips are not loaded during training.
 
 Small rotations and scaling are applied consistently across a training clip. Optional reflection swaps left/right body points, hand blocks and masks; it is disabled until label semantics have been checked. Validation and test preprocessing are deterministic.
 

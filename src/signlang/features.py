@@ -62,6 +62,21 @@ def prepare(points, valid, frames=32, rng=None, mirror_probability=0.0):
     return resample(seq, frames).reshape(frames, 225)
 
 
+def baseline_summary(points, valid, frames=32, summary="zero_mean"):
+    """Summarize a clip for a linear baseline while preserving missingness rules."""
+    sequence = resample(normalize(points, valid), frames)
+    if summary == "zero_mean":
+        return sequence.mean(axis=0).reshape(-1)
+    if summary != "observed_mean":
+        raise ValueError("Baseline summary must be zero_mean or observed_mean")
+    mask = resample(np.asarray(valid, dtype=bool), frames)
+    counts = mask.sum(axis=0)
+    observed = np.divide(sequence.sum(axis=0), counts[:, None],
+                         out=np.zeros((75, 3), dtype=np.float32),
+                         where=counts[:, None] > 0)
+    return observed.reshape(-1)
+
+
 class StablePrediction:
     def __init__(self, threshold=0.75, repeats=3):
         if not 0 <= threshold <= 1 or repeats < 1:

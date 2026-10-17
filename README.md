@@ -4,7 +4,7 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 
 **Locked project direction:** the open-source Python package and CLI are the primary deliverable. The existing website is the demonstration interface. The [agreed scope and release plan](docs/PROJECT_DIRECTION.md) distinguish existing functionality from the work required for a packaged release.
 
-**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.2.1 includes `SignRecognizer`, prediction/model-export commands, and the cache-quality audit. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
+**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.3.0 includes `SignRecognizer`, prediction/model-export commands, cache-quality auditing, and improved missing-landmark handling. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
 
 **[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
 
@@ -19,7 +19,7 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 - Numeric JSON baseline export, explicit joblib trust, model hashes, and tracking diagnostics.
 - MediaPipe Tasks extraction: 33 pose + 21 left-hand + 21 right-hand points.
 - Shared normalization, missing-point masks, and 32-frame resampling.
-- Mean-landmark logistic regression baseline and two-layer GRU.
+- Observed-frame mean-landmark logistic regression baseline and two-layer GRU.
 - Validation-based model selection, reproducible seeds, saved configurations.
 - Top-1/top-5 accuracy, macro F1, per-class metrics, predictions, and confusion matrices.
 - Local webcam demo with temporal smoothing, uncertain state, and FPS display.
@@ -78,7 +78,7 @@ The two webcam commands let you compare the trained GRU with the mean-landmark b
 
 | Experiment | Test coverage | Top-1 | Top-5 | Macro F1 | Live FPS |
 |---|---|---|---|---|---|
-| Logistic regression | 100/258 official test clips | 0.3200 | 0.6300 | 0.2115 | N/A |
+| Observed-frame logistic regression | 100/258 official test clips | 0.3800 | 0.7300 | 0.2769 | N/A |
 | GRU | 100/258 official test clips | 0.3000 | 0.6200 | 0.1993 | Not measured |
 
 These are measured results on the **available subset**, not the complete WLASL100 benchmark. Both models used the same 100 test IDs; 28 of the 100 classes had no available test clip. The browser app samples video frames differently from the offline evaluator, so its real-world upload accuracy is unknown. The [run report](reports/wlasl100-mirror-run-2026-10-13/README.md) and metrics files record the denominator, missing classes, and exact IDs. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. For fewer than five classes the reported top-k uses k = class count and is not informative.

@@ -1,18 +1,18 @@
 # Python package and CLI guide
 
-Version 0.2.1 is an alpha developer toolkit for isolated ASL words. It exposes saved-video prediction, landmark extraction and audit, model export, and the existing training/evaluation workflows. Recognition remains experimental; package checks are not accuracy measurements.
+Version 0.3.0 is an alpha developer toolkit for isolated ASL words. It exposes saved-video prediction, landmark extraction and audit, model export, and the existing training/evaluation workflows. Recognition remains experimental; package checks are not accuracy measurements.
 
 ## Install
 
 Use Python 3.10–3.12 in a virtual environment. The release wheel has no bundled models or datasets. Install it from GitHub Releases:
 
 ```sh
-python -m pip install "sign-language-recognition[vision] @ https://github.com/veerendrakosuri/sign-language-recognition/releases/download/v0.2.1/sign_language_recognition-0.2.1-py3-none-any.whl"
+python -m pip install "sign-language-recognition[vision] @ https://github.com/veerendrakosuri/sign-language-recognition/releases/download/v0.3.0/sign_language_recognition-0.3.0-py3-none-any.whl"
 signlang --version
 signlang --help
 ```
 
-Alternatively, clone the repository, check out `v0.2.1`, and run `python -m pip install ".[vision]"` from its root. Package-registry publication is not claimed; do not assume a same-named PyPI project belongs to this repository.
+Alternatively, clone the repository, check out `v0.3.0`, and run `python -m pip install ".[vision]"` from its root. Package-registry publication is not claimed; do not assume a same-named PyPI project belongs to this repository.
 
 | Install choice | Purpose |
 |---|---|
@@ -36,9 +36,9 @@ Export a baseline you trained yourself:
 signlang export-model --checkpoint runs/baseline-v1/baseline.joblib --output my-model.json --trust-checkpoint
 ```
 
-Export supports StandardScaler followed by binary or multinomial LogisticRegression. It refuses unsupported pipelines, existing output files, and incomplete class mappings. JSON schema 1 carries labels, frame count, scaler mean/scale, weights, bias, and the source checkpoint hash. JSON inference uses NumPy and does not deserialize Python objects.
+Export supports StandardScaler followed by binary or multinomial LogisticRegression. It refuses unsupported pipelines, existing output files, and incomplete class mappings. JSON schema 1 carries labels, frame count, summary method, scaler mean/scale, weights, bias, and the source checkpoint hash. Models without a summary field retain the original `zero_mean` behavior; new training defaults to validated `observed_mean`, which excludes missing frames separately for each landmark. JSON inference uses NumPy and does not deserialize Python objects.
 
-The repository's existing `web/public/model.json` can be used for local research experiments subject to its separate terms. It is not bundled in the package. Its baseline scored 32/100 on available offline test clips from an incomplete WLASL100 mirror; it is not a complete benchmark or a live accuracy measurement.
+The repository's existing `web/public/model.json` can be used for local research experiments subject to its separate terms. It is not bundled in the package. Its baseline scored 38/100 on available offline test clips from an incomplete WLASL100 mirror; it is not a complete benchmark or a live accuracy measurement.
 
 ## Predict a saved video
 

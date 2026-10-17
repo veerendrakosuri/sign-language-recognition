@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 — 2026-10-17
+
+- Add versioned `observed_mean` baseline preprocessing so missing landmark frames are excluded from each landmark's mean; old checkpoints continue to use `zero_mean`.
+- Expand validation search to six regularization values and make the validated observed-frame summary the default for new baseline training.
+- Apply the selected preprocessing consistently in training, evaluation, Python inference, webcam inference, JSON export, and browser inference.
+- Improve the measured partial-data result on the same 100 available test clips from 0.32 to 0.38 top-1, 0.63 to 0.73 top-5, and 0.2115 to 0.2769 macro F1.
+
 ## 0.2.1 — 2026-10-15
 
 - Add `signlang audit` as a supported cache-integrity and landmark-tracking quality command.

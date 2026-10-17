@@ -8,7 +8,7 @@ import pickle
 
 import numpy as np
 
-from .features import prepare
+from .features import baseline_summary, prepare
 
 PREPROCESSING = "pose33-hands42-shoulders-v1"
 
@@ -119,6 +119,9 @@ class SignRecognizer:
             if not isinstance(pack, dict) or type(pack.get("schema")) is not int or pack["schema"] != 1:
                 raise ValueError("Expected JSON baseline model schema 1")
             self.labels, self.frames = _metadata(pack)
+            self.summary = pack.get("summary", "zero_mean")
+            if self.summary not in {"zero_mean", "observed_mean"}:
+                raise ValueError("JSON model summary must be zero_mean or observed_mean")
             try:
                 self._mean = np.asarray(pack["mean"], dtype=np.float64)
                 self._scale = np.asarray(pack["scale"], dtype=np.float64)
@@ -146,6 +149,9 @@ class SignRecognizer:
             if not isinstance(pack, dict):
                 raise ValueError("Expected a baseline checkpoint dictionary")
             self.labels, self.frames = _metadata(pack)
+            self.summary = pack.get("summary", "zero_mean")
+            if self.summary not in {"zero_mean", "observed_mean"}:
+                raise ValueError("Baseline summary must be zero_mean or observed_mean")
             self._model = pack.get("model")
             if not hasattr(self._model, "predict_proba") or not hasattr(self._model, "classes_"):
                 raise ValueError("Baseline checkpoint must provide predict_proba and classes_")
@@ -201,7 +207,7 @@ class SignRecognizer:
         x = prepare(points, valid, self.frames)
         if self._kind == "baseline-json":
             # Match StandardScaler's two float32 in-place operations.
-            scaled = x.mean(axis=0)
+            scaled = baseline_summary(points, valid, self.frames, self.summary)
             scaled -= self._mean
             scaled /= self._scale
             logits = self._weights @ scaled + self._bias
@@ -213,7 +219,8 @@ class SignRecognizer:
                 probabilities /= probabilities.sum()
         elif self._kind == "baseline":
             probabilities = np.zeros(len(self.labels))
-            probabilities[np.asarray(self._model.classes_, dtype=int)] = self._model.predict_proba(x.mean(axis=0, keepdims=True))[0]
+            feature = baseline_summary(points, valid, self.frames, self.summary)
+            probabilities[np.asarray(self._model.classes_, dtype=int)] = self._model.predict_proba(feature[None])[0]
         else:
             torch = _dependency("torch", "train")
             with torch.inference_mode():
@@ -228,7 +235,9 @@ class SignRecognizer:
         return RecognitionResult(
             predictions=tuple(Prediction(self.labels[i], float(probabilities[i])) for i in order),
             model=dict(kind=self._kind, sha256=self._sha256, classes=len(self.labels),
-                       sequence_frames=self.frames, preprocessing=PREPROCESSING),
+                       sequence_frames=self.frames,
+                       preprocessing=(f"{PREPROCESSING}:{self.summary}"
+                                      if self._kind.startswith("baseline") else PREPROCESSING)),
             input=dict(frames=len(points)),
             tracking=dict(hand_frame_fraction=hand_fraction, shoulder_frame_fraction=float(shoulders.mean())),
             warnings=warnings,

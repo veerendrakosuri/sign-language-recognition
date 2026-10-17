@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sign-language-recognition"
-version = "0.2.1"
+version = "0.3.0"
 description = "Developer toolkit and CLI for experimental isolated ASL word recognition"
 readme = "PACKAGE_README.md"
 license = "MIT"

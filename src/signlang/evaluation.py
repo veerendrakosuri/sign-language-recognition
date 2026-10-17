@@ -11,6 +11,7 @@ import torch
 from sklearn.metrics import classification_report, confusion_matrix, f1_score
 
 from .data import digest, load_split, read_manifest, write_json
+from .features import baseline_summary
 from .training import load_gru
 
 
@@ -43,14 +44,16 @@ def evaluate(args):
     current_labels = json.loads(Path(args.labels).read_text(encoding="utf-8"))
     if labels != current_labels:
         raise ValueError("Checkpoint labels differ from manifest labels")
-    x, y, ids, _ = load_split(args.manifest, args.cache, args.split, pack["frames"])
+    x, y, ids, raw = load_split(args.manifest, args.cache, args.split, pack["frames"])
     if args.kind == "gru":
         with torch.inference_mode():
             probabilities = np.concatenate([torch.softmax(model(torch.from_numpy(x[i:i+64]).to(args.device)), 1)
                                             .cpu().numpy() for i in range(0, len(x), 64)])
     else:
         probabilities = np.zeros((len(x), len(labels)), np.float32)
-        probabilities[:, model.classes_.astype(int)] = model.predict_proba(x.mean(axis=1))
+        summary = pack.get("summary", "zero_mean")
+        features = np.stack([baseline_summary(p, m, pack["frames"], summary) for p, m in raw])
+        probabilities[:, model.classes_.astype(int)] = model.predict_proba(features)
     result, predicted = metrics(y, probabilities, labels)
     result.update(split=args.split, model=args.kind, checkpoint_sha256=digest(args.checkpoint),
                   manifest_sha256=digest(args.manifest), evaluated_video_ids=ids)

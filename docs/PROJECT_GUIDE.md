@@ -96,7 +96,7 @@ Pose and hand z values have different origins. The implementation centers pose z
 python -m signlang.cli baseline --output runs/baseline-v1
 ```
 
-The baseline averages each normalized sequence, scales features using training data, and fits logistic regression. It chooses regularization from three values using validation top-1 accuracy. It does not read the test split.
+The baseline averages each normalized landmark over frames where that landmark was observed, scales features using training data, and fits logistic regression. Missing detections therefore do not pull coordinates toward zero. It chooses regularization from six values using validation top-1 accuracy. It does not read the test split. Pass `--summary zero_mean` only to reproduce checkpoints from before version 0.3.0.
 
 Outputs: `baseline.joblib`, `validation.json`, `config.json`, and `sample_ids.json`. A mean-pose model ignores order: two signs with similar hand positions but different motion may confuse it. This gives the GRU a meaningful comparison.
 

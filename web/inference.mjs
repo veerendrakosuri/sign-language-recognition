@@ -55,8 +55,9 @@ function interpolatedReference(frames, good, index, coordinate) {
   return center(left) * (1 - fraction) + center(right) * fraction;
 }
 
-export function prepareMean(frames, outputFrames = 32) {
+export function prepareMean(frames, outputFrames = 32, summary = 'zero_mean') {
   if (!frames.length || outputFrames < 2) throw new Error("A non-empty sign video is required.");
+  if (!['zero_mean', 'observed_mean'].includes(summary)) throw new Error('Invalid model summary.');
   const widths = frames.map(({ points }) => Math.hypot(points[11][0] - points[12][0], points[11][1] - points[12][1]));
   const good = frames.map(({ valid }, i) => valid[11] && valid[12] && widths[i] > 1e-4);
   const usableWidths = widths.filter((_, i) => good[i]).sort((a, b) => a - b);
@@ -73,11 +74,17 @@ export function prepareMean(frames, outputFrames = 32) {
     });
   });
   const mean = Array(225).fill(0);
+  const counts = Array(225).fill(0);
   for (let i = 0; i < outputFrames; i += 1) {
     // numpy.round uses ties-to-even; 32-frame clips almost never hit a tie.
     const index = Math.round(i * (normalized.length - 1) / (outputFrames - 1));
-    normalized[index].forEach((value, d) => { mean[d] += value / outputFrames; });
+    normalized[index].forEach((value, d) => {
+      const observed = frames[index].valid[Math.floor(d / 3)];
+      if (summary === 'zero_mean') mean[d] += value / outputFrames;
+      else if (observed) { mean[d] += value; counts[d] += 1; }
+    });
   }
+  if (summary === 'observed_mean') mean.forEach((value, d) => { mean[d] = counts[d] ? value / counts[d] : 0; });
   return mean;
 }
 
@@ -86,7 +93,10 @@ export function classify(frames, model) {
       model.weights?.length !== model.labels?.length || model.bias?.length !== model.labels?.length) {
     throw new Error("The recognition model is unavailable or invalid.");
   }
-  const mean = prepareMean(frames, model.frames);
+  if (model.summary && !['zero_mean', 'observed_mean'].includes(model.summary)) {
+    throw new Error("The recognition model is unavailable or invalid.");
+  }
+  const mean = prepareMean(frames, model.frames, model.summary ?? 'zero_mean');
   const scaled = mean.map((x, i) => (x - model.mean[i]) / model.scale[i]);
   const logits = model.weights.map((weights, classIndex) => {
     if (weights.length !== 225) throw new Error("Invalid model weights.");

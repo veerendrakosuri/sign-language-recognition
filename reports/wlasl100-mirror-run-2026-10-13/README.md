@@ -12,12 +12,13 @@ All 1,013 available clips produced landmark cache files. The other 1,025 expecte
 
 | Model | Validation top-1 | Test top-1 | Test top-5 | Test macro F1 |
 |---|---:|---:|---:|---:|
+| Observed-frame mean logistic regression, C=10 | **0.4727** | **0.3800** | **0.7300** | **0.2769** |
 | Mean-landmark logistic regression, C=10 | 0.4121 | 0.3200 | 0.6300 | 0.2115 |
 | Two-layer GRU, 256 hidden units, best epoch 57 | 0.3576 | 0.3000 | 0.6200 | 0.1993 |
 
-Both models used 32 frames, seed 42, and the cached MediaPipe pose/hand landmarks. GRU training used CPU, batch size 32, learning rate 0.001, and no mirroring. The baseline performed better on validation and on this limited test subset. The GRU's low training loss alongside lower validation accuracy suggests overfitting; a larger and verified dataset is more valuable than claiming this as a successful GRU improvement.
+All models used 32 frames, seed 42, and the cached MediaPipe pose/hand landmarks. The selected baseline excludes missing frames separately when averaging each landmark; this setting and C=10 were selected using validation only. After selection, it was evaluated once on the same 100 available test clips used by the earlier models. GRU training used CPU, batch size 32, learning rate 0.001, and no mirroring. The GRU's low training loss alongside lower validation accuracy suggests overfitting; a larger and verified dataset remains the largest opportunity.
 
-The `baseline/` and `gru/` folders contain the exact evaluation outputs: `metrics.json`, `classification_report.json`, `predictions.csv`, `confusion_matrix.csv`, `confusion_matrix.png`, and `results.md`. Baseline selection scores and both training configurations are included; `gru/history.csv` records all 60 epochs. Raw videos, landmark caches, and serialized checkpoints are kept out of Git. The local checkpoints are `runs/baseline-v1/baseline.joblib` and `runs/gru-v1/best.pt`.
+The `baseline-observed/`, `baseline/`, and `gru/` folders contain exact evaluation outputs: `metrics.json`, `classification_report.json`, `predictions.csv`, `confusion_matrix.csv`, `confusion_matrix.png`, and `results.md`. Selection scores and training configurations are included; `gru/history.csv` records all 60 epochs. Raw videos, landmark caches, and serialized checkpoints are kept out of Git. The selected local checkpoint is `runs/baseline-observed-v1/baseline.joblib`.
 
 The [landmark audit](landmark_audit.json) checked all 1,013 cached arrays for expected shape, finite values, zeroed missing points, and usable shoulders/hands. It found **zero malformed caches**; median length was 65 frames and median assigned-hand coverage was 60% of frames. **325 clips** (241 train, 50 validation, 34 test) had an assigned hand in fewer than half their frames. This 50% threshold is a review heuristic, not an extraction failure or an accuracy measure. Twelve clips selected from low tracking, confident GRU errors, correct GRU predictions, and training examples were inspected at three sampled frames each. The sampled frames showed one visible signer and gesture motion, but they cannot verify full clip boundaries or ASL label correctness. Hands were visible at gesture peaks in some low-coverage clips; the cause of missing assigned-hand landmarks has not been isolated.
 
@@ -27,4 +28,4 @@ The webcam command can now load either the GRU or the baseline checkpoint with `
 
 Before presenting this as a full project result, have an ASL-qualified reviewer check clip labels and complete sign boundaries, recover missing videos where permitted, rerun training and held-out evaluation on the improved coverage, and measure the webcam demo's FPS and failure cases. Do not present these partial-data numbers as the official WLASL100 score.
 
-An [offline follow-up](followup_2026-10-15.md) documents a validation-only feature comparison and an exploratory diagnosis of hand-tracking losses after the first informal webcam feedback. No new test score or live accuracy claim was added.
+An [offline follow-up](followup_2026-10-15.md) documents the first validation-only feature comparison and an exploratory diagnosis of hand-tracking losses after the informal webcam feedback. A later validation-only experiment selected observed-frame averaging; its new test result is reported above. No live accuracy claim was added.

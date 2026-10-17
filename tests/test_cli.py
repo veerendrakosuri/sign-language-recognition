@@ -15,7 +15,7 @@ def run_cli(*args):
 
 def test_version_and_help_do_not_import_optional_dependencies():
     result = run_cli("--version")
-    assert result.returncode == 0 and "0.2.1" in result.stdout
+    assert result.returncode == 0 and "0.3.0" in result.stdout
     assert run_cli("predict", "--help").returncode == 0
     code = "import signlang, sys; assert not {'torch','cv2','mediapipe','sklearn'} & sys.modules.keys()"
     subprocess.run([sys.executable, "-c", code], check=True, timeout=30)

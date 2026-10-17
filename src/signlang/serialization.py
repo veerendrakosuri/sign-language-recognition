@@ -35,6 +35,7 @@ def export_baseline(checkpoint, output, *, trusted=False):
         raise ValueError("Expected 225 finite landmark features")
     payload = dict(schema=1, name="Exported landmark logistic baseline",
                    checkpoint_sha256=recognizer._sha256, frames=recognizer.frames,
+                   summary=recognizer.summary,
                    labels=list(recognizer.labels), mean=scaler.mean_.tolist(),
                    scale=scaler.scale_.tolist(), weights=weights.tolist(), bias=bias.tolist())
     output = Path(output)

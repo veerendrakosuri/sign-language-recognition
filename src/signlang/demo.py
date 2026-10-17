@@ -6,7 +6,7 @@ import joblib
 import numpy as np
 import torch
 
-from .features import prepare, StablePrediction
+from .features import baseline_summary, prepare, StablePrediction
 from .landmarks import Extractor
 from .training import load_gru
 
@@ -26,8 +26,10 @@ def predict_window(kind, model, pack, points, masks, device="cpu"):
     x = prepare(points, masks, pack["frames"])
     if kind == "baseline":
         probabilities = np.zeros(len(pack["labels"]), np.float32)
+        feature = baseline_summary(points, masks, pack["frames"],
+                                   pack.get("summary", "zero_mean"))
         probabilities[model.classes_.astype(int)] = model.predict_proba(
-            x.mean(axis=0, keepdims=True))[0]
+            feature[None])[0]
     else:
         with torch.inference_mode():
             probabilities = torch.softmax(model(torch.from_numpy(x[None]).to(device)), 1)[0]

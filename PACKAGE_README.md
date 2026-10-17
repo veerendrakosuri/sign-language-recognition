@@ -1,6 +1,6 @@
 # Isolated ASL Recognition Toolkit
 
-A Python API and `signlang` CLI for experimental isolated ASL word recognition, landmark extraction, training, and reproducible evaluation. Python 3.10–3.12. Version 0.2.1 is an alpha release.
+A Python API and `signlang` CLI for experimental isolated ASL word recognition, landmark extraction, training, and reproducible evaluation. Python 3.10–3.12. Version 0.3.0 is an alpha release.
 
 Install from the [GitHub releases](https://github.com/veerendrakosuri/sign-language-recognition/releases) wheel, or from the repository using `python -m pip install .`. Package-registry publication is not claimed.
 
@@ -22,7 +22,7 @@ print(result.to_dict())
 
 Video input must contain one complete trimmed sign. Download the detector assets first with `signlang download-models`. JSON results include ranked uncalibrated scores, tracking coverage, a model SHA-256 fingerprint, and preprocessing metadata.
 
-The reference baseline scored 32/100 on available offline test clips from an incomplete WLASL100 mirror. This is not full-benchmark or live accuracy. Predictions and unknown-gesture behavior remain experimental. ASL and ISL require different datasets and evaluation.
+The reference baseline scored 38/100 on available offline test clips from an incomplete WLASL100 mirror. This is not full-benchmark or live accuracy. Predictions and unknown-gesture behavior remain experimental. ASL and ISL require different datasets and evaluation.
 
 Original project source code is MIT licensed. WLASL, derived model weights, recordings, and third-party assets retain separate terms; see [notices](https://github.com/veerendrakosuri/sign-language-recognition/blob/main/THIRD_PARTY_NOTICES.md).
 

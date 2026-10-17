@@ -75,6 +75,10 @@ def parser():
         if name != "evaluate":
             cmd.add_argument("--frames", type=int, default=32)
             cmd.add_argument("--seed", type=int, default=42)
+        if name == "baseline":
+            cmd.add_argument("--summary", choices=["observed_mean", "zero_mean"],
+                             default="observed_mean",
+                             help="How missing landmark frames contribute to baseline features")
         if name == "train":
             cmd.add_argument("--epochs", type=int, default=60)
             cmd.add_argument("--batch-size", type=int, default=32)

@@ -36,8 +36,18 @@ test('browser preprocessing agrees with Python on synthetic landmark frames', ()
   for (let i = 0; i < pythonEnd.length; i += 1) assert.ok(Math.abs(mean[mean.length - pythonEnd.length + i] - pythonEnd[i]) < 1e-5);
   const predictions = classify(syntheticFrames(), model);
   assert.equal(predictions.length, 100);
-  assert.equal(predictions[0].label, 'right');
+  assert.equal(predictions[0].label, 'thursday');
   assert.ok(Math.abs(predictions.reduce((sum, row) => sum + row.score, 0) - 1) < 1e-10);
+});
+
+test('observed mean does not average missing landmarks as zeros', () => {
+  const frames = syntheticFrames();
+  const zeroMean = prepareMean(frames, 5, 'zero_mean');
+  const observedMean = prepareMean(frames, 5, 'observed_mean');
+  const rightHandCoordinate = 54 * 3;
+  assert.notEqual(zeroMean[rightHandCoordinate], observedMean[rightHandCoordinate]);
+  assert.ok(Math.abs(observedMean[rightHandCoordinate] -
+    (zeroMean[rightHandCoordinate] * 5 / 4)) < 1e-6);
 });
 
 test('hand slots follow anatomical pose wrists rather than handedness labels', () => {

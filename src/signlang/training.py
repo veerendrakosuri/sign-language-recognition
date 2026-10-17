@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 from torch.utils.data import DataLoader, Dataset
 
 from .data import digest, load_split, require_training_classes, write_json
-from .features import prepare
+from .features import baseline_summary, prepare
 from .model import SignGRU
 
 
@@ -45,21 +45,27 @@ def get_labels(args):
 
 
 def train_baseline(args):
+    from threadpoolctl import threadpool_limits
     labels = get_labels(args)
-    x, y, ids, _ = load_split(args.manifest, args.cache, "train", args.frames)
+    _, y, ids, raw = load_split(args.manifest, args.cache, "train", args.frames)
     require_training_classes(y, labels)
-    vx, vy, vids, _ = load_split(args.manifest, args.cache, "val", args.frames)
+    _, vy, vids, valid_raw = load_split(args.manifest, args.cache, "val", args.frames)
+    x = np.stack([baseline_summary(p, m, args.frames, args.summary) for p, m in raw])
+    vx = np.stack([baseline_summary(p, m, args.frames, args.summary) for p, m in valid_raw])
     out = run_directory(args.output, args)
     best, best_score, scores = None, -1, []
-    for c in (0.1, 1.0, 10.0):
-        model = make_pipeline(StandardScaler(), LogisticRegression(C=c, max_iter=2000,
-                               class_weight="balanced", random_state=args.seed))
-        model.fit(x.mean(axis=1), y)
-        score = float(model.score(vx.mean(axis=1), vy))
-        scores.append(dict(C=c, validation_top1=score))
-        if score > best_score:
-            best, best_score = model, score
-    joblib.dump(dict(model=best, labels=labels, frames=args.frames), out / "baseline.joblib")
+    # Fixed native thread count avoids borderline predictions changing with BLAS scheduling.
+    with threadpool_limits(limits=1):
+        for c in (0.1, 0.3, 1.0, 3.0, 10.0, 30.0):
+            model = make_pipeline(StandardScaler(), LogisticRegression(C=c, max_iter=2000,
+                                   class_weight="balanced", random_state=args.seed))
+            model.fit(x, y)
+            score = float(model.score(vx, vy))
+            scores.append(dict(C=c, summary=args.summary, validation_top1=score))
+            if score > best_score:
+                best, best_score = model, score
+    joblib.dump(dict(model=best, labels=labels, frames=args.frames, summary=args.summary),
+                out / "baseline.joblib")
     write_json(out / "validation.json", scores)
     write_json(out / "sample_ids.json", dict(train=ids, val=vids))
     print(f"Baseline validation top-1: {best_score:.4f}")
