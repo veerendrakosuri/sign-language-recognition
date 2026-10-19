@@ -4,11 +4,11 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 
 **Locked project direction:** the open-source Python package and CLI are the primary deliverable. The existing website is the demonstration interface. The [agreed scope and release plan](docs/PROJECT_DIRECTION.md) distinguish existing functionality from the work required for a packaged release.
 
-**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.3.0 includes `SignRecognizer`, prediction/model-export commands, cache-quality auditing, and improved missing-landmark handling. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
+**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.4.0 includes `SignRecognizer`, prediction/model-export commands, cache-quality auditing, improved missing-landmark handling, and the expanded reference baseline. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
 
 **[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
 
-**Status:** implementation, training/evaluation materials, and a browser research preview are provided. A local training run on an incomplete WLASL100 video mirror has been evaluated; its [measured results and coverage limits](reports/wlasl100-mirror-run-2026-10-13/README.md) are below. The original checkpoint stays local, while the evaluated baseline's numeric weights are exported for the [web app](web/README.md). No full WLASL100 benchmark, browser-upload accuracy, or live-webcam accuracy is claimed. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
+**Status:** implementation, training/evaluation materials, and a browser research preview are provided. A local training run on a 71.9%-complete WLASL100 video collection has been evaluated; its [measured results and coverage limits](reports/wlasl100-expanded-run-2026-10-18/README.md) are below. The original checkpoint stays local, while the evaluated baseline's numeric weights are exported for the [web app](web/README.md). No full WLASL100 benchmark, browser-upload accuracy, or live-webcam accuracy is claimed. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
 
 **Start here: [complete step-by-step guide](docs/PROJECT_GUIDE.md).** It explains the concepts, every command, expected files, troubleshooting, and a three-week plan.
 
@@ -78,12 +78,13 @@ The two webcam commands let you compare the trained GRU with the mean-landmark b
 
 | Experiment | Test coverage | Top-1 | Top-5 | Macro F1 | Live FPS |
 |---|---|---|---|---|---|
-| Observed-frame logistic regression | 100/258 official test clips | 0.3800 | 0.7300 | 0.2769 | N/A |
-| GRU | 100/258 official test clips | 0.3000 | 0.6200 | 0.1993 | Not measured |
+| Expanded observed-frame logistic regression | 201/258 official test clips | 0.5323 | 0.7960 | 0.4916 | N/A |
+| Previous observed-frame baseline (v0.3.0) | 100/258 official test clips | 0.3800 | 0.7300 | 0.2769 | N/A |
+| Previous GRU (not retrained on expanded data) | 100/258 official test clips | 0.3000 | 0.6200 | 0.1993 | Not measured |
 
-These are measured results on the **available subset**, not the complete WLASL100 benchmark. Both models used the same 100 test IDs; 28 of the 100 classes had no available test clip. The browser app samples video frames differently from the offline evaluator, so its real-world upload accuracy is unknown. The [run report](reports/wlasl100-mirror-run-2026-10-13/README.md) and metrics files record the denominator, missing classes, and exact IDs. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. For fewer than five classes the reported top-k uses k = class count and is not informative.
+These are measured results on **available subsets**, not the complete WLASL100 benchmark. The expanded result covers 201 official test IDs and lacks test examples for 2 of 100 classes; its denominator differs from the older results, so the rows are not a controlled model-only comparison. The browser app samples video frames differently from the offline evaluator, so its real-world upload accuracy is unknown. The [expanded run report](reports/wlasl100-expanded-run-2026-10-18/README.md) records the denominator, missing classes, hashes, and exact IDs. Synthetic tests validate program behavior; their scores do not measure sign-language recognition. For fewer than five classes the reported top-k uses k = class count and is not informative.
 
-The [landmark audit](reports/wlasl100-mirror-run-2026-10-13/landmark_audit.json) found no malformed caches, but 325 of 1,013 clips had an assigned hand in fewer than half their frames. The trained GRU checkpoint and detector assets passed local inference/startup checks. A live camera trial and ASL-qualified review of clip labels are still needed.
+The [expanded landmark audit](reports/wlasl100-expanded-run-2026-10-18/landmark_audit.json) found no malformed caches, but 438 of 1,466 clips had an assigned hand in fewer than half their frames. The previously trained GRU checkpoint and detector assets passed local inference/startup checks. A live camera trial and ASL-qualified review of clip labels are still needed.
 
 ## File map
 

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/style.css">
   <script type="module" src="/app.mjs"></script>
 </head>
-<body>
+<body data-model-version="0.4.0">
   <header class="topbar">
     <a class="brand" href="#top" aria-label="SignLab home"><span class="brand-mark">S</span><span>SignLab</span></a>
     <nav aria-label="Main navigation"><a href="#try">Try the demo</a><a href="#how">How it works</a><a href="https://github.com/veerendrakosuri/sign-language-recognition" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
@@ -63,7 +63,7 @@
 
     <section class="method" id="how" aria-labelledby="how-title"><div class="section-heading"><div><p class="eyebrow">02 / UNDER THE HOOD</p><h2 id="how-title">From motion to a suggestion.</h2></div></div><div class="steps"><article><span class="step-num">01</span><h3>Pick a clip</h3><p>Record or upload one isolated ASL word. A full sentence is outside this model’s scope.</p></article><article><span class="step-num">02</span><h3>Find landmarks</h3><p>MediaPipe estimates 33 body and 21 points on each detected hand. Your frames stay in the browser.</p></article><article><span class="step-num">03</span><h3>Compare patterns</h3><p>The same normalization and trained logistic baseline used in local evaluation rank 100 candidate words.</p></article></div></section>
 
-    <section class="evidence" aria-labelledby="evidence-title"><div><p class="eyebrow">03 / READ THE RESULTS HONESTLY</p><h2 id="evidence-title">Useful experiment.<br><em>Early evidence.</em></h2><p>This is an educational prototype, not an interpreter or accessibility service. The incomplete video mirror and weak hand tracking limit performance. Browser-upload accuracy has not yet been measured. It must not be relied on for communication, medical, legal, or safety decisions.</p><a href="https://github.com/veerendrakosuri/sign-language-recognition/blob/main/reports/wlasl100-mirror-run-2026-10-13/README.md" target="_blank" rel="noopener noreferrer">Read the full evaluation ↗</a></div><div class="metrics"><div><strong>32%</strong><span>top-1 on the available offline test clips</span></div><div><strong>100 / 258</strong><span>official test clips available for evaluation</span></div><div><strong>100</strong><span>trained word classes, not complete ASL</span></div></div></section>
+    <section class="evidence" aria-labelledby="evidence-title"><div><p class="eyebrow">03 / READ THE RESULTS HONESTLY</p><h2 id="evidence-title">Useful experiment.<br><em>Early evidence.</em></h2><p>This is an educational prototype, not an interpreter or accessibility service. The incomplete video collection and weak hand tracking limit performance. Browser-upload accuracy has not yet been measured. It must not be relied on for communication, medical, legal, or safety decisions.</p><a href="https://github.com/veerendrakosuri/sign-language-recognition/blob/main/reports/wlasl100-expanded-run-2026-10-18/README.md" target="_blank" rel="noopener noreferrer">Read the full evaluation ↗</a></div><div class="metrics"><div><strong>53.23%</strong><span>top-1 on the available offline test clips</span></div><div><strong>201 / 258</strong><span>official test clips available for evaluation</span></div><div><strong>100</strong><span>trained word classes, not complete ASL</span></div></div></section>
   </main>
   <footer><span>SignLab · An educational ASL recognition project</span><span>WLASL data: academic and computational use only · <a href="https://github.com/dxli94/WLASL" target="_blank" rel="noopener noreferrer">Dataset terms ↗</a></span></footer>
 </body>

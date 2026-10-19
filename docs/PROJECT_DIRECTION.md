@@ -13,7 +13,7 @@ Primary users are developers, students, and researchers who want to process thei
 - Installable Python project with the `signlang` CLI entry point.
 - Manifest preparation, landmark extraction, baseline/GRU training, evaluation, and local webcam commands.
 - Evaluation reports, automated tests, tracking diagnostics, and a public browser research preview.
-- Selected baseline accuracy of 38/100 on the available offline test clips; incomplete WLASL100 data coverage.
+- Selected baseline accuracy of 107/201 (53.23%) on the available offline test clips; 1,466/2,038 official WLASL100 clips are available.
 
 ## First package release
 

@@ -1,0 +1,5977 @@
+{
+  "manifest_sha256": "e70ebd92d1a6e40de42263269eaa605591b5e8549d335d3609b815ef36c15bc7",
+  "cached_clips": 1466,
+  "missing_cache_count": 572,
+  "malformed_cache_count": 0,
+  "missing_cache_ids": [
+    "65225",
+    "68208",
+    "07085",
+    "07086",
+    "07087",
+    "07088",
+    "07089",
+    "07090",
+    "07091",
+    "07092",
+    "07093",
+    "07094",
+    "07095",
+    "07096",
+    "07097",
+    "07098",
+    "07071",
+    "07072",
+    "07073",
+    "67424",
+    "07077",
+    "07078",
+    "07079",
+    "07080",
+    "07081",
+    "07082",
+    "07083",
+    "07084",
+    "68538",
+    "68660",
+    "17726",
+    "17727",
+    "17732",
+    "17714",
+    "17715",
+    "17716",
+    "17717",
+    "17718",
+    "67594",
+    "17719",
+    "69054",
+    "12332",
+    "12336",
+    "12337",
+    "67519",
+    "12321",
+    "12322",
+    "12323",
+    "12324",
+    "05748",
+    "05735",
+    "05736",
+    "05737",
+    "68580",
+    "09865",
+    "09866",
+    "09867",
+    "09853",
+    "09856",
+    "67483",
+    "09857",
+    "09858",
+    "09859",
+    "09860",
+    "09861",
+    "09862",
+    "09863",
+    "68292",
+    "24965",
+    "24971",
+    "24972",
+    "24948",
+    "67715",
+    "24950",
+    "24951",
+    "68870",
+    "11327",
+    "11328",
+    "11329",
+    "11312",
+    "11317",
+    "11318",
+    "11319",
+    "11320",
+    "11321",
+    "11322",
+    "11323",
+    "11324",
+    "11325",
+    "11326",
+    "68890",
+    "63241",
+    "63233",
+    "63234",
+    "66780",
+    "67066",
+    "63238",
+    "68790",
+    "08928",
+    "08922",
+    "08923",
+    "67468",
+    "67470",
+    "68592",
+    "13637",
+    "13638",
+    "13639",
+    "67535",
+    "13644",
+    "13645",
+    "68586",
+    "14900",
+    "14901",
+    "14889",
+    "14891",
+    "14895",
+    "65717",
+    "21888",
+    "21889",
+    "21875",
+    "21876",
+    "67660",
+    "67659",
+    "27219",
+    "27220",
+    "27210",
+    "27211",
+    "27212",
+    "67757",
+    "27218",
+    "68406",
+    "38542",
+    "38531",
+    "67934",
+    "38536",
+    "57952",
+    "67299",
+    "57944",
+    "57945",
+    "68852",
+    "68918",
+    "62174",
+    "62165",
+    "62166",
+    "67036",
+    "62172",
+    "68416",
+    "68992",
+    "64223",
+    "64215",
+    "64216",
+    "67012",
+    "64217",
+    "64290",
+    "64298",
+    "64299",
+    "64289",
+    "68720",
+    "02002",
+    "01989",
+    "01990",
+    "67356",
+    "01998",
+    "01999",
+    "68230",
+    "06475",
+    "67414",
+    "06484",
+    "06485",
+    "13205",
+    "13206",
+    "13207",
+    "68674",
+    "68688",
+    "21946",
+    "67663",
+    "21956",
+    "28113",
+    "28114",
+    "28123",
+    "28124",
+    "33271",
+    "33283",
+    "33284",
+    "34828",
+    "34829",
+    "67873",
+    "34833",
+    "34837",
+    "34838",
+    "36945",
+    "36934",
+    "67908",
+    "68694",
+    "68770",
+    "67937",
+    "39005",
+    "38996",
+    "40120",
+    "67949",
+    "40124",
+    "40128",
+    "68972",
+    "56573",
+    "56574",
+    "56576",
+    "56577",
+    "56578",
+    "56560",
+    "56564",
+    "67275",
+    "56568",
+    "56569",
+    "56571",
+    "69092",
+    "57646",
+    "67292",
+    "57636",
+    "57637",
+    "68330",
+    "62982",
+    "62971",
+    "67057",
+    "62986",
+    "62973",
+    "67058",
+    "68764",
+    "63670",
+    "63671",
+    "67078",
+    "63678",
+    "05643",
+    "05635",
+    "67400",
+    "05642",
+    "68274",
+    "06836",
+    "06837",
+    "06838",
+    "67420",
+    "06843",
+    "06844",
+    "07403",
+    "07395",
+    "07396",
+    "67431",
+    "08950",
+    "08951",
+    "08952",
+    "08953",
+    "08939",
+    "67465",
+    "08947",
+    "08949",
+    "68632",
+    "17088",
+    "17092",
+    "67578",
+    "17096",
+    "69016",
+    "20984",
+    "20985",
+    "67642",
+    "20991",
+    "22129",
+    "22118",
+    "22119",
+    "67667",
+    "22124",
+    "68528",
+    "25337",
+    "25338",
+    "25327",
+    "25328",
+    "67722",
+    "68396",
+    "26736",
+    "26716",
+    "67745",
+    "26722",
+    "26726",
+    "68350",
+    "26977",
+    "26978",
+    "67750",
+    "26981",
+    "31766",
+    "31754",
+    "67817",
+    "31763",
+    "31764",
+    "68904",
+    "32161",
+    "32162",
+    "67827",
+    "32165",
+    "32166",
+    "32336",
+    "32327",
+    "32328",
+    "67829",
+    "32329",
+    "68794",
+    "34739",
+    "34741",
+    "67872",
+    "34745",
+    "68928",
+    "51077",
+    "67188",
+    "51070",
+    "68428",
+    "68624",
+    "55367",
+    "55374",
+    "56851",
+    "56845",
+    "67278",
+    "67279",
+    "68622",
+    "63206",
+    "63209",
+    "63213",
+    "64089",
+    "67009",
+    "67010",
+    "64096",
+    "00630",
+    "67342",
+    "00636",
+    "00638",
+    "68576",
+    "03004",
+    "03007",
+    "67367",
+    "06336",
+    "06339",
+    "67411",
+    "06342",
+    "09969",
+    "65332",
+    "09961",
+    "09962",
+    "68202",
+    "11771",
+    "67514",
+    "11779",
+    "13330",
+    "13331",
+    "67531",
+    "67530",
+    "13335",
+    "13336",
+    "13700",
+    "13701",
+    "67536",
+    "13706",
+    "13709",
+    "68988",
+    "69048",
+    "14626",
+    "14629",
+    "67550",
+    "14632",
+    "14677",
+    "14678",
+    "14679",
+    "14683",
+    "14684",
+    "68842",
+    "17018",
+    "67579",
+    "17024",
+    "17025",
+    "68520",
+    "69086",
+    "18326",
+    "18328",
+    "67610",
+    "67611",
+    "18333",
+    "18334",
+    "68344",
+    "19262",
+    "19263",
+    "19265",
+    "67624",
+    "19268",
+    "68692",
+    "22956",
+    "22959",
+    "22966",
+    "24656",
+    "24659",
+    "24642",
+    "24643",
+    "24645",
+    "69068",
+    "32251",
+    "32252",
+    "67826",
+    "32259",
+    "68974",
+    "35514",
+    "35515",
+    "67886",
+    "35522",
+    "68398",
+    "42835",
+    "67990",
+    "42841",
+    "42842",
+    "42976",
+    "42963",
+    "42964",
+    "68288",
+    "43172",
+    "67081",
+    "43176",
+    "43177",
+    "43178",
+    "68218",
+    "68510",
+    "49601",
+    "49604",
+    "67170",
+    "49605",
+    "50042",
+    "50043",
+    "67177",
+    "50051",
+    "51228",
+    "51229",
+    "51230",
+    "51234",
+    "68294",
+    "58505",
+    "58506",
+    "67309",
+    "58507",
+    "58500",
+    "58501",
+    "68540",
+    "62249",
+    "67038",
+    "62256",
+    "62257",
+    "62258",
+    "68924",
+    "63804",
+    "63805",
+    "63794",
+    "67003",
+    "63802",
+    "01390",
+    "67350",
+    "01396",
+    "01397",
+    "68612",
+    "05236",
+    "05237",
+    "67392",
+    "68338",
+    "67413",
+    "06370",
+    "06361",
+    "06362",
+    "69028",
+    "07964",
+    "07969",
+    "67446",
+    "07972",
+    "68368",
+    "08427",
+    "08428",
+    "67451",
+    "08436",
+    "10162",
+    "10164",
+    "67489",
+    "67490",
+    "10156",
+    "68374",
+    "10896",
+    "67501",
+    "10903",
+    "69004",
+    "13159",
+    "67527",
+    "13166",
+    "15036",
+    "67555",
+    "67556",
+    "15042",
+    "23772",
+    "23773",
+    "67697",
+    "23780",
+    "68954",
+    "28206",
+    "28207",
+    "28208",
+    "67776",
+    "28213",
+    "68320",
+    "30847",
+    "30848",
+    "30837",
+    "30838",
+    "67802",
+    "30841",
+    "30842",
+    "68636",
+    "32951",
+    "67840",
+    "32957",
+    "68810",
+    "35457",
+    "67890",
+    "35462",
+    "35463",
+    "35464",
+    "35465",
+    "35466",
+    "68544",
+    "37885",
+    "67925",
+    "37892",
+    "37893",
+    "68364",
+    "40838",
+    "40839",
+    "67958",
+    "40844",
+    "40846",
+    "68446",
+    "41031",
+    "67961",
+    "41036",
+    "45266",
+    "45270",
+    "67111",
+    "45272",
+    "68726",
+    "45441",
+    "67114",
+    "45442",
+    "45437",
+    "48122",
+    "48123",
+    "67143",
+    "48111",
+    "48112",
+    "67142",
+    "68856",
+    "49179",
+    "49180",
+    "67159",
+    "67161",
+    "49187",
+    "68336",
+    "53272",
+    "67227",
+    "53278",
+    "57279",
+    "57280",
+    "57281",
+    "67287",
+    "57290",
+    "58364",
+    "67306",
+    "58369"
+  ],
+  "malformed_caches": [],
+  "all": {
+    "clips": 1466,
+    "frames": {
+      "min": 19.0,
+      "p10": 35.0,
+      "median": 65.0,
+      "p90": 99.0,
+      "max": 195.0
+    },
+    "shoulder_frame_fraction": {
+      "min": 0.9756,
+      "p10": 0.9886,
+      "median": 1.0,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "any_hand_frame_fraction": {
+      "min": 0.0543,
+      "p10": 0.361,
+      "median": 0.5948,
+      "p90": 1.0,
+      "max": 1.0
+    },
+    "both_hands_frame_fraction": {
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0465,
+      "p90": 0.7183,
+      "max": 1.0
+    },
+    "review_candidates": {
+      "hands_under_half_frames": 438
+    }
+  },
+  "by_split": {
+    "train": {
+      "clips": 1022,
+      "frames": {
+        "min": 19.0,
+        "p10": 35.0,
+        "median": 65.0,
+        "p90": 98.0,
+        "max": 195.0
+      },
+      "shoulder_frame_fraction": {
+        "min": 0.9756,
+        "p10": 0.9884,
+        "median": 1.0,
+        "p90": 1.0,
+        "max": 1.0
+      },
+      "any_hand_frame_fraction": {
+        "min": 0.1364,
+        "p10": 0.3627,
+        "median": 0.5909,
+        "p90": 1.0,
+        "max": 1.0
+      },
+      "both_hands_frame_fraction": {
+        "min": 0.0,
+        "p10": 0.0,
+        "median": 0.0653,
+        "p90": 0.6913,
+        "max": 1.0
+      },
+      "review_candidates": {
+        "hands_under_half_frames": 321
+      }
+    },
+    "val": {
+      "clips": 243,
+      "frames": {
+        "min": 23.0,
+        "p10": 34.4,
+        "median": 68.0,
+        "p90": 99.8,
+        "max": 195.0
+      },
+      "shoulder_frame_fraction": {
+        "min": 0.9808,
+        "p10": 0.9889,
+        "median": 1.0,
+        "p90": 1.0,
+        "max": 1.0
+      },
+      "any_hand_frame_fraction": {
+        "min": 0.157,
+        "p10": 0.354,
+        "median": 0.5769,
+        "p90": 1.0,
+        "max": 1.0
+      },
+      "both_hands_frame_fraction": {
+        "min": 0.0,
+        "p10": 0.0,
+        "median": 0.0421,
+        "p90": 0.6305,
+        "max": 1.0
+      },
+      "review_candidates": {
+        "hands_under_half_frames": 68
+      }
+    },
+    "test": {
+      "clips": 201,
+      "frames": {
+        "min": 23.0,
+        "p10": 36.0,
+        "median": 62.0,
+        "p90": 99.0,
+        "max": 147.0
+      },
+      "shoulder_frame_fraction": {
+        "min": 0.9831,
+        "p10": 0.9897,
+        "median": 1.0,
+        "p90": 1.0,
+        "max": 1.0
+      },
+      "any_hand_frame_fraction": {
+        "min": 0.0543,
+        "p10": 0.3594,
+        "median": 0.6883,
+        "p90": 1.0,
+        "max": 1.0
+      },
+      "both_hands_frame_fraction": {
+        "min": 0.0,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 1.0,
+        "max": 1.0
+      },
+      "review_candidates": {
+        "hands_under_half_frames": 49
+      }
+    }
+  },
+  "review_candidates": [
+    {
+      "video_id": "68012",
+      "split": "train",
+      "gloss": "book",
+      "frames": 93,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46236559139784944,
+      "both_hands_frame_fraction": 0.43010752688172044,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70212",
+      "split": "val",
+      "gloss": "book",
+      "frames": 99,
+      "shoulder_frame_fraction": 0.98989898989899,
+      "any_hand_frame_fraction": 0.36363636363636365,
+      "both_hands_frame_fraction": 0.31313131313131315,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70266",
+      "split": "train",
+      "gloss": "book",
+      "frames": 120,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3416666666666667,
+      "both_hands_frame_fraction": 0.25,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07099",
+      "split": "val",
+      "gloss": "book",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.3563218390804598,
+      "both_hands_frame_fraction": 0.3103448275862069,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65539",
+      "split": "train",
+      "gloss": "drink",
+      "frames": 44,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4090909090909091,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70173",
+      "split": "val",
+      "gloss": "drink",
+      "frames": 121,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.15702479338842976,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68042",
+      "split": "val",
+      "gloss": "drink",
+      "frames": 73,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4520547945205479,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68041",
+      "split": "train",
+      "gloss": "drink",
+      "frames": 88,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3977272727272727,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17710",
+      "split": "train",
+      "gloss": "drink",
+      "frames": 70,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42857142857142855,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17733",
+      "split": "train",
+      "gloss": "drink",
+      "frames": 93,
+      "shoulder_frame_fraction": 0.989247311827957,
+      "any_hand_frame_fraction": 0.45161290322580644,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17711",
+      "split": "train",
+      "gloss": "drink",
+      "frames": 81,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.41975308641975306,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17713",
+      "split": "test",
+      "gloss": "drink",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.46153846153846156,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17709",
+      "split": "train",
+      "gloss": "drink",
+      "frames": 105,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.34285714285714286,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68028",
+      "split": "train",
+      "gloss": "computer",
+      "frames": 89,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48314606741573035,
+      "both_hands_frame_fraction": 0.033707865168539325,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "12329",
+      "split": "train",
+      "gloss": "computer",
+      "frames": 99,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47474747474747475,
+      "both_hands_frame_fraction": 0.46464646464646464,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "12311",
+      "split": "train",
+      "gloss": "computer",
+      "frames": 72,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3472222222222222,
+      "both_hands_frame_fraction": 0.3472222222222222,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70348",
+      "split": "train",
+      "gloss": "before",
+      "frames": 95,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68007",
+      "split": "train",
+      "gloss": "before",
+      "frames": 84,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4166666666666667,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05749",
+      "split": "train",
+      "gloss": "before",
+      "frames": 90,
+      "shoulder_frame_fraction": 0.9888888888888889,
+      "any_hand_frame_fraction": 0.24444444444444444,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05750",
+      "split": "val",
+      "gloss": "before",
+      "frames": 100,
+      "shoulder_frame_fraction": 0.99,
+      "any_hand_frame_fraction": 0.34,
+      "both_hands_frame_fraction": 0.28,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70230",
+      "split": "train",
+      "gloss": "chair",
+      "frames": 130,
+      "shoulder_frame_fraction": 0.9923076923076923,
+      "any_hand_frame_fraction": 0.3769230769230769,
+      "both_hands_frame_fraction": 0.2692307692307692,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70263",
+      "split": "train",
+      "gloss": "chair",
+      "frames": 117,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47863247863247865,
+      "both_hands_frame_fraction": 0.37606837606837606,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "09848",
+      "split": "train",
+      "gloss": "chair",
+      "frames": 96,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4895833333333333,
+      "both_hands_frame_fraction": 0.4583333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "09869",
+      "split": "train",
+      "gloss": "chair",
+      "frames": 93,
+      "shoulder_frame_fraction": 0.989247311827957,
+      "any_hand_frame_fraction": 0.3763440860215054,
+      "both_hands_frame_fraction": 0.3118279569892473,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "24941",
+      "split": "train",
+      "gloss": "go",
+      "frames": 66,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4393939393939394,
+      "both_hands_frame_fraction": 0.3333333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "24973",
+      "split": "train",
+      "gloss": "go",
+      "frames": 108,
+      "shoulder_frame_fraction": 0.9907407407407407,
+      "any_hand_frame_fraction": 0.32407407407407407,
+      "both_hands_frame_fraction": 0.25,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "24940",
+      "split": "train",
+      "gloss": "go",
+      "frames": 88,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.375,
+      "both_hands_frame_fraction": 0.3068181818181818,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11310",
+      "split": "train",
+      "gloss": "clothes",
+      "frames": 89,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48314606741573035,
+      "both_hands_frame_fraction": 0.3146067415730337,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11330",
+      "split": "train",
+      "gloss": "clothes",
+      "frames": 83,
+      "shoulder_frame_fraction": 0.9879518072289156,
+      "any_hand_frame_fraction": 0.3253012048192771,
+      "both_hands_frame_fraction": 0.24096385542168675,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11314",
+      "split": "val",
+      "gloss": "clothes",
+      "frames": 47,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3191489361702128,
+      "both_hands_frame_fraction": 0.1276595744680851,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11309",
+      "split": "train",
+      "gloss": "clothes",
+      "frames": 67,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.44776119402985076,
+      "both_hands_frame_fraction": 0.40298507462686567,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63242",
+      "split": "train",
+      "gloss": "who",
+      "frames": 86,
+      "shoulder_frame_fraction": 0.9883720930232558,
+      "any_hand_frame_fraction": 0.38372093023255816,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63226",
+      "split": "test",
+      "gloss": "who",
+      "frames": 67,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.417910447761194,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63229",
+      "split": "val",
+      "gloss": "who",
+      "frames": 47,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3404255319148936,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63232",
+      "split": "train",
+      "gloss": "who",
+      "frames": 155,
+      "shoulder_frame_fraction": 0.9935483870967742,
+      "any_hand_frame_fraction": 0.4645161290322581,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63225",
+      "split": "train",
+      "gloss": "who",
+      "frames": 111,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.32432432432432434,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70326",
+      "split": "train",
+      "gloss": "candy",
+      "frames": 125,
+      "shoulder_frame_fraction": 0.992,
+      "any_hand_frame_fraction": 0.32,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08929",
+      "split": "val",
+      "gloss": "candy",
+      "frames": 82,
+      "shoulder_frame_fraction": 0.9878048780487805,
+      "any_hand_frame_fraction": 0.4878048780487805,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08919",
+      "split": "train",
+      "gloss": "candy",
+      "frames": 86,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3953488372093023,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08920",
+      "split": "train",
+      "gloss": "candy",
+      "frames": 75,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3466666666666667,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65298",
+      "split": "train",
+      "gloss": "candy",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3050847457627119,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65299",
+      "split": "train",
+      "gloss": "candy",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3548387096774194,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08915",
+      "split": "test",
+      "gloss": "candy",
+      "frames": 94,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.26595744680851063,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65415",
+      "split": "test",
+      "gloss": "cousin",
+      "frames": 70,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70332",
+      "split": "train",
+      "gloss": "cousin",
+      "frames": 101,
+      "shoulder_frame_fraction": 0.9900990099009901,
+      "any_hand_frame_fraction": 0.33663366336633666,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13647",
+      "split": "train",
+      "gloss": "cousin",
+      "frames": 79,
+      "shoulder_frame_fraction": 0.9873417721518988,
+      "any_hand_frame_fraction": 0.45569620253164556,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13633",
+      "split": "val",
+      "gloss": "cousin",
+      "frames": 94,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3723404255319149,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13634",
+      "split": "val",
+      "gloss": "cousin",
+      "frames": 96,
+      "shoulder_frame_fraction": 0.9895833333333334,
+      "any_hand_frame_fraction": 0.4895833333333333,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13636",
+      "split": "train",
+      "gloss": "cousin",
+      "frames": 131,
+      "shoulder_frame_fraction": 0.9923664122137404,
+      "any_hand_frame_fraction": 0.3816793893129771,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13630",
+      "split": "train",
+      "gloss": "cousin",
+      "frames": 106,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42452830188679247,
+      "both_hands_frame_fraction": 0.009433962264150943,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13643",
+      "split": "train",
+      "gloss": "cousin",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46774193548387094,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70015",
+      "split": "train",
+      "gloss": "deaf",
+      "frames": 91,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3956043956043956,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68033",
+      "split": "train",
+      "gloss": "deaf",
+      "frames": 107,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4392523364485981,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "14882",
+      "split": "train",
+      "gloss": "deaf",
+      "frames": 108,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4351851851851852,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65445",
+      "split": "train",
+      "gloss": "deaf",
+      "frames": 52,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4230769230769231,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "14888",
+      "split": "test",
+      "gloss": "deaf",
+      "frames": 66,
+      "shoulder_frame_fraction": 0.9848484848484849,
+      "any_hand_frame_fraction": 0.4696969696969697,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "14896",
+      "split": "train",
+      "gloss": "deaf",
+      "frames": 100,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.27,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70234",
+      "split": "test",
+      "gloss": "fine",
+      "frames": 108,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.25,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68048",
+      "split": "train",
+      "gloss": "fine",
+      "frames": 76,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4605263157894737,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21887",
+      "split": "val",
+      "gloss": "fine",
+      "frames": 66,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48484848484848486,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21890",
+      "split": "test",
+      "gloss": "fine",
+      "frames": 75,
+      "shoulder_frame_fraction": 0.9866666666666667,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.3466666666666667,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21891",
+      "split": "train",
+      "gloss": "fine",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.38961038961038963,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21871",
+      "split": "train",
+      "gloss": "fine",
+      "frames": 79,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4936708860759494,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21872",
+      "split": "val",
+      "gloss": "fine",
+      "frames": 77,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4155844155844156,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21884",
+      "split": "train",
+      "gloss": "fine",
+      "frames": 55,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3090909090909091,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "27221",
+      "split": "train",
+      "gloss": "help",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.44155844155844154,
+      "both_hands_frame_fraction": 0.33766233766233766,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65891",
+      "split": "val",
+      "gloss": "help",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.423728813559322,
+      "both_hands_frame_fraction": 0.4067796610169492,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65889",
+      "split": "train",
+      "gloss": "help",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3709677419354839,
+      "both_hands_frame_fraction": 0.2903225806451613,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "38539",
+      "split": "train",
+      "gloss": "no",
+      "frames": 87,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.27586206896551724,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "38544",
+      "split": "train",
+      "gloss": "no",
+      "frames": 83,
+      "shoulder_frame_fraction": 0.9879518072289156,
+      "any_hand_frame_fraction": 0.30120481927710846,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66183",
+      "split": "train",
+      "gloss": "no",
+      "frames": 68,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.38235294117647056,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "38524",
+      "split": "train",
+      "gloss": "no",
+      "frames": 80,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2625,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57950",
+      "split": "train",
+      "gloss": "thin",
+      "frames": 55,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.41818181818181815,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57934",
+      "split": "train",
+      "gloss": "thin",
+      "frames": 90,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4666666666666667,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57953",
+      "split": "train",
+      "gloss": "thin",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.367816091954023,
+      "both_hands_frame_fraction": 0.26436781609195403,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57937",
+      "split": "train",
+      "gloss": "thin",
+      "frames": 31,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2903225806451613,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66606",
+      "split": "train",
+      "gloss": "thin",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.45161290322580644,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66607",
+      "split": "val",
+      "gloss": "thin",
+      "frames": 72,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4305555555555556,
+      "both_hands_frame_fraction": 0.4027777777777778,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57933",
+      "split": "val",
+      "gloss": "thin",
+      "frames": 90,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4111111111111111,
+      "both_hands_frame_fraction": 0.35555555555555557,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57943",
+      "split": "test",
+      "gloss": "thin",
+      "frames": 119,
+      "shoulder_frame_fraction": 0.9915966386554622,
+      "any_hand_frame_fraction": 0.2689075630252101,
+      "both_hands_frame_fraction": 0.13445378151260504,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62175",
+      "split": "train",
+      "gloss": "walk",
+      "frames": 96,
+      "shoulder_frame_fraction": 0.9895833333333334,
+      "any_hand_frame_fraction": 0.4583333333333333,
+      "both_hands_frame_fraction": 0.3854166666666667,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66742",
+      "split": "train",
+      "gloss": "walk",
+      "frames": 66,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3787878787878788,
+      "both_hands_frame_fraction": 0.3333333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62158",
+      "split": "val",
+      "gloss": "walk",
+      "frames": 94,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.23404255319148937,
+      "both_hands_frame_fraction": 0.20212765957446807,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62171",
+      "split": "train",
+      "gloss": "walk",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.38333333333333336,
+      "both_hands_frame_fraction": 0.3333333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64224",
+      "split": "train",
+      "gloss": "year",
+      "frames": 94,
+      "shoulder_frame_fraction": 0.9893617021276596,
+      "any_hand_frame_fraction": 0.4574468085106383,
+      "both_hands_frame_fraction": 0.35106382978723405,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66816",
+      "split": "train",
+      "gloss": "year",
+      "frames": 58,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.39655172413793105,
+      "both_hands_frame_fraction": 0.25862068965517243,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64209",
+      "split": "test",
+      "gloss": "year",
+      "frames": 70,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4714285714285714,
+      "both_hands_frame_fraction": 0.3,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64296",
+      "split": "train",
+      "gloss": "yes",
+      "frames": 99,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.23232323232323232,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64280",
+      "split": "train",
+      "gloss": "yes",
+      "frames": 63,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3968253968253968,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64281",
+      "split": "train",
+      "gloss": "yes",
+      "frames": 71,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.29577464788732394,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64283",
+      "split": "train",
+      "gloss": "yes",
+      "frames": 22,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.13636363636363635,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68001",
+      "split": "val",
+      "gloss": "all",
+      "frames": 86,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3488372093023256,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70244",
+      "split": "train",
+      "gloss": "black",
+      "frames": 95,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3473684210526316,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06473",
+      "split": "train",
+      "gloss": "black",
+      "frames": 56,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.39285714285714285,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06474",
+      "split": "train",
+      "gloss": "black",
+      "frames": 80,
+      "shoulder_frame_fraction": 0.9875,
+      "any_hand_frame_fraction": 0.4375,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06471",
+      "split": "train",
+      "gloss": "black",
+      "frames": 77,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.23376623376623376,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06481",
+      "split": "test",
+      "gloss": "black",
+      "frames": 87,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47126436781609193,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06486",
+      "split": "train",
+      "gloss": "black",
+      "frames": 111,
+      "shoulder_frame_fraction": 0.990990990990991,
+      "any_hand_frame_fraction": 0.2882882882882883,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69281",
+      "split": "train",
+      "gloss": "cool",
+      "frames": 77,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4805194805194805,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65403",
+      "split": "train",
+      "gloss": "cool",
+      "frames": 74,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2702702702702703,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13214",
+      "split": "train",
+      "gloss": "cool",
+      "frames": 73,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.410958904109589,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13216",
+      "split": "train",
+      "gloss": "cool",
+      "frames": 71,
+      "shoulder_frame_fraction": 0.9859154929577465,
+      "any_hand_frame_fraction": 0.38028169014084506,
+      "both_hands_frame_fraction": 0.36619718309859156,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13217",
+      "split": "train",
+      "gloss": "cool",
+      "frames": 74,
+      "shoulder_frame_fraction": 0.9864864864864865,
+      "any_hand_frame_fraction": 0.40540540540540543,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13203",
+      "split": "val",
+      "gloss": "cool",
+      "frames": 65,
+      "shoulder_frame_fraction": 0.9846153846153847,
+      "any_hand_frame_fraction": 0.4307692307692308,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13196",
+      "split": "test",
+      "gloss": "cool",
+      "frames": 26,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.34615384615384615,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70361",
+      "split": "test",
+      "gloss": "finish",
+      "frames": 117,
+      "shoulder_frame_fraction": 0.9914529914529915,
+      "any_hand_frame_fraction": 0.27350427350427353,
+      "both_hands_frame_fraction": 0.24786324786324787,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21942",
+      "split": "val",
+      "gloss": "finish",
+      "frames": 68,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47058823529411764,
+      "both_hands_frame_fraction": 0.36764705882352944,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21943",
+      "split": "train",
+      "gloss": "finish",
+      "frames": 28,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.39285714285714285,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "21941",
+      "split": "train",
+      "gloss": "finish",
+      "frames": 56,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4642857142857143,
+      "both_hands_frame_fraction": 0.42857142857142855,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70270",
+      "split": "val",
+      "gloss": "hot",
+      "frames": 99,
+      "shoulder_frame_fraction": 0.98989898989899,
+      "any_hand_frame_fraction": 0.23232323232323232,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "28125",
+      "split": "train",
+      "gloss": "hot",
+      "frames": 71,
+      "shoulder_frame_fraction": 0.9859154929577465,
+      "any_hand_frame_fraction": 0.36619718309859156,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "28109",
+      "split": "train",
+      "gloss": "hot",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4067796610169492,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "28107",
+      "split": "train",
+      "gloss": "hot",
+      "frames": 81,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.32098765432098764,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "28118",
+      "split": "train",
+      "gloss": "hot",
+      "frames": 45,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4666666666666667,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "28122",
+      "split": "train",
+      "gloss": "hot",
+      "frames": 73,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4931506849315068,
+      "both_hands_frame_fraction": 0.3013698630136986,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "33266",
+      "split": "train",
+      "gloss": "like",
+      "frames": 64,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.484375,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68093",
+      "split": "test",
+      "gloss": "like",
+      "frames": 75,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4266666666666667,
+      "both_hands_frame_fraction": 0.013333333333333334,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70299",
+      "split": "train",
+      "gloss": "like",
+      "frames": 121,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.24793388429752067,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "33285",
+      "split": "train",
+      "gloss": "like",
+      "frames": 102,
+      "shoulder_frame_fraction": 0.9901960784313726,
+      "any_hand_frame_fraction": 0.45098039215686275,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "33286",
+      "split": "test",
+      "gloss": "like",
+      "frames": 99,
+      "shoulder_frame_fraction": 0.98989898989899,
+      "any_hand_frame_fraction": 0.45454545454545453,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "33278",
+      "split": "train",
+      "gloss": "like",
+      "frames": 74,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36486486486486486,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "33281",
+      "split": "train",
+      "gloss": "like",
+      "frames": 85,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.43529411764705883,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "33282",
+      "split": "train",
+      "gloss": "like",
+      "frames": 85,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.43529411764705883,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70308",
+      "split": "val",
+      "gloss": "many",
+      "frames": 114,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.34210526315789475,
+      "both_hands_frame_fraction": 0.3157894736842105,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "34823",
+      "split": "train",
+      "gloss": "many",
+      "frames": 71,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.15492957746478872,
+      "both_hands_frame_fraction": 0.056338028169014086,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "34839",
+      "split": "train",
+      "gloss": "many",
+      "frames": 86,
+      "shoulder_frame_fraction": 0.9883720930232558,
+      "any_hand_frame_fraction": 0.37209302325581395,
+      "both_hands_frame_fraction": 0.20930232558139536,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69402",
+      "split": "val",
+      "gloss": "mother",
+      "frames": 82,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.43902439024390244,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "36946",
+      "split": "train",
+      "gloss": "mother",
+      "frames": 94,
+      "shoulder_frame_fraction": 0.9893617021276596,
+      "any_hand_frame_fraction": 0.32978723404255317,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "36931",
+      "split": "train",
+      "gloss": "mother",
+      "frames": 82,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3780487804878049,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "36932",
+      "split": "train",
+      "gloss": "mother",
+      "frames": 75,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.38666666666666666,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66146",
+      "split": "train",
+      "gloss": "mother",
+      "frames": 61,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3114754098360656,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "36929",
+      "split": "train",
+      "gloss": "mother",
+      "frames": 61,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36065573770491804,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "36939",
+      "split": "train",
+      "gloss": "mother",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4666666666666667,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "36940",
+      "split": "test",
+      "gloss": "mother",
+      "frames": 58,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4482758620689655,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "36944",
+      "split": "train",
+      "gloss": "mother",
+      "frames": 67,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3582089552238806,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "38994",
+      "split": "val",
+      "gloss": "now",
+      "frames": 78,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4230769230769231,
+      "both_hands_frame_fraction": 0.32051282051282054,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70345",
+      "split": "train",
+      "gloss": "now",
+      "frames": 107,
+      "shoulder_frame_fraction": 0.9906542056074766,
+      "any_hand_frame_fraction": 0.3364485981308411,
+      "both_hands_frame_fraction": 0.2897196261682243,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "38990",
+      "split": "train",
+      "gloss": "now",
+      "frames": 78,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4358974358974359,
+      "both_hands_frame_fraction": 0.4358974358974359,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "39006",
+      "split": "train",
+      "gloss": "now",
+      "frames": 81,
+      "shoulder_frame_fraction": 0.9876543209876543,
+      "any_hand_frame_fraction": 0.345679012345679,
+      "both_hands_frame_fraction": 0.2962962962962963,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "38991",
+      "split": "test",
+      "gloss": "now",
+      "frames": 78,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.28205128205128205,
+      "both_hands_frame_fraction": 0.2692307692307692,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70310",
+      "split": "val",
+      "gloss": "orange",
+      "frames": 103,
+      "shoulder_frame_fraction": 0.9902912621359223,
+      "any_hand_frame_fraction": 0.1941747572815534,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70249",
+      "split": "train",
+      "gloss": "orange",
+      "frames": 113,
+      "shoulder_frame_fraction": 0.9911504424778761,
+      "any_hand_frame_fraction": 0.23893805309734514,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "40116",
+      "split": "train",
+      "gloss": "orange",
+      "frames": 79,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4936708860759494,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "40126",
+      "split": "test",
+      "gloss": "orange",
+      "frames": 87,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.41379310344827586,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "40129",
+      "split": "train",
+      "gloss": "orange",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.31868131868131866,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "40130",
+      "split": "train",
+      "gloss": "orange",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.31868131868131866,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70323",
+      "split": "val",
+      "gloss": "table",
+      "frames": 95,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.25263157894736843,
+      "both_hands_frame_fraction": 0.042105263157894736,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "56579",
+      "split": "train",
+      "gloss": "table",
+      "frames": 71,
+      "shoulder_frame_fraction": 0.9859154929577465,
+      "any_hand_frame_fraction": 0.4225352112676056,
+      "both_hands_frame_fraction": 0.352112676056338,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57647",
+      "split": "train",
+      "gloss": "thanksgiving",
+      "frames": 83,
+      "shoulder_frame_fraction": 0.9879518072289156,
+      "any_hand_frame_fraction": 0.3855421686746988,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57629",
+      "split": "val",
+      "gloss": "thanksgiving",
+      "frames": 72,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3194444444444444,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57643",
+      "split": "train",
+      "gloss": "thanksgiving",
+      "frames": 57,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47368421052631576,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69531",
+      "split": "val",
+      "gloss": "what",
+      "frames": 63,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.49206349206349204,
+      "both_hands_frame_fraction": 0.4603174603174603,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62984",
+      "split": "train",
+      "gloss": "what",
+      "frames": 50,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36,
+      "both_hands_frame_fraction": 0.3,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62987",
+      "split": "test",
+      "gloss": "what",
+      "frames": 97,
+      "shoulder_frame_fraction": 0.9896907216494846,
+      "any_hand_frame_fraction": 0.25773195876288657,
+      "both_hands_frame_fraction": 0.23711340206185566,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62964",
+      "split": "train",
+      "gloss": "what",
+      "frames": 91,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3076923076923077,
+      "both_hands_frame_fraction": 0.2967032967032967,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62988",
+      "split": "val",
+      "gloss": "what",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.2988505747126437,
+      "both_hands_frame_fraction": 0.25287356321839083,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62965",
+      "split": "val",
+      "gloss": "what",
+      "frames": 74,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4189189189189189,
+      "both_hands_frame_fraction": 0.3108108108108108,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63679",
+      "split": "train",
+      "gloss": "woman",
+      "frames": 69,
+      "shoulder_frame_fraction": 0.9855072463768116,
+      "any_hand_frame_fraction": 0.463768115942029,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63666",
+      "split": "train",
+      "gloss": "woman",
+      "frames": 70,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.45714285714285713,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66799",
+      "split": "train",
+      "gloss": "woman",
+      "frames": 55,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63664",
+      "split": "test",
+      "gloss": "woman",
+      "frames": 121,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.256198347107438,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63676",
+      "split": "train",
+      "gloss": "woman",
+      "frames": 47,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.425531914893617,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05644",
+      "split": "train",
+      "gloss": "bed",
+      "frames": 84,
+      "shoulder_frame_fraction": 0.9880952380952381,
+      "any_hand_frame_fraction": 0.40476190476190477,
+      "both_hands_frame_fraction": 0.19047619047619047,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05629",
+      "split": "train",
+      "gloss": "bed",
+      "frames": 69,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42028985507246375,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05632",
+      "split": "train",
+      "gloss": "bed",
+      "frames": 33,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3939393939393939,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65163",
+      "split": "val",
+      "gloss": "bed",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.38333333333333336,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65161",
+      "split": "train",
+      "gloss": "bed",
+      "frames": 58,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.43103448275862066,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05639",
+      "split": "test",
+      "gloss": "bed",
+      "frames": 52,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4230769230769231,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05641",
+      "split": "train",
+      "gloss": "bed",
+      "frames": 77,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36363636363636365,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06835",
+      "split": "train",
+      "gloss": "blue",
+      "frames": 79,
+      "shoulder_frame_fraction": 0.9873417721518988,
+      "any_hand_frame_fraction": 0.46835443037974683,
+      "both_hands_frame_fraction": 0.012658227848101266,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06841",
+      "split": "train",
+      "gloss": "blue",
+      "frames": 99,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3434343434343434,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65216",
+      "split": "train",
+      "gloss": "blue",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3389830508474576,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06845",
+      "split": "test",
+      "gloss": "blue",
+      "frames": 85,
+      "shoulder_frame_fraction": 0.9882352941176471,
+      "any_hand_frame_fraction": 0.3176470588235294,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07392",
+      "split": "train",
+      "gloss": "bowling",
+      "frames": 30,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65242",
+      "split": "train",
+      "gloss": "bowling",
+      "frames": 90,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3888888888888889,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65241",
+      "split": "train",
+      "gloss": "bowling",
+      "frames": 61,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.45901639344262296,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07388",
+      "split": "val",
+      "gloss": "bowling",
+      "frames": 70,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65294",
+      "split": "val",
+      "gloss": "can",
+      "frames": 53,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.33962264150943394,
+      "both_hands_frame_fraction": 0.32075471698113206,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08955",
+      "split": "train",
+      "gloss": "can",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.24675324675324675,
+      "both_hands_frame_fraction": 0.23376623376623376,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08936",
+      "split": "train",
+      "gloss": "can",
+      "frames": 63,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.30158730158730157,
+      "both_hands_frame_fraction": 0.25396825396825395,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08937",
+      "split": "train",
+      "gloss": "can",
+      "frames": 89,
+      "shoulder_frame_fraction": 0.9887640449438202,
+      "any_hand_frame_fraction": 0.42696629213483145,
+      "both_hands_frame_fraction": 0.38202247191011235,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69298",
+      "split": "train",
+      "gloss": "dog",
+      "frames": 81,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4074074074074074,
+      "both_hands_frame_fraction": 0.024691358024691357,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17097",
+      "split": "test",
+      "gloss": "dog",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.26436781609195403,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17084",
+      "split": "train",
+      "gloss": "dog",
+      "frames": 58,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.39655172413793105,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17086",
+      "split": "train",
+      "gloss": "dog",
+      "frames": 68,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.45588235294117646,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65506",
+      "split": "test",
+      "gloss": "dog",
+      "frames": 75,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.22666666666666666,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65507",
+      "split": "train",
+      "gloss": "dog",
+      "frames": 57,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47368421052631576,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17083",
+      "split": "val",
+      "gloss": "dog",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46774193548387094,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65677",
+      "split": "train",
+      "gloss": "family",
+      "frames": 68,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.27941176470588236,
+      "both_hands_frame_fraction": 0.25,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "20992",
+      "split": "train",
+      "gloss": "family",
+      "frames": 83,
+      "shoulder_frame_fraction": 0.9879518072289156,
+      "any_hand_frame_fraction": 0.46987951807228917,
+      "both_hands_frame_fraction": 0.39759036144578314,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69325",
+      "split": "train",
+      "gloss": "fish",
+      "frames": 94,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46808510638297873,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "22130",
+      "split": "train",
+      "gloss": "fish",
+      "frames": 85,
+      "shoulder_frame_fraction": 0.9882352941176471,
+      "any_hand_frame_fraction": 0.32941176470588235,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "22114",
+      "split": "val",
+      "gloss": "fish",
+      "frames": 86,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.37209302325581395,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70176",
+      "split": "val",
+      "gloss": "graduate",
+      "frames": 129,
+      "shoulder_frame_fraction": 0.9922480620155039,
+      "any_hand_frame_fraction": 0.2713178294573643,
+      "both_hands_frame_fraction": 0.13953488372093023,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "25339",
+      "split": "train",
+      "gloss": "graduate",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.367816091954023,
+      "both_hands_frame_fraction": 0.22988505747126436,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65843",
+      "split": "val",
+      "gloss": "graduate",
+      "frames": 71,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4084507042253521,
+      "both_hands_frame_fraction": 0.29577464788732394,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "25321",
+      "split": "train",
+      "gloss": "graduate",
+      "frames": 92,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.34782608695652173,
+      "both_hands_frame_fraction": 0.2717391304347826,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "25332",
+      "split": "train",
+      "gloss": "graduate",
+      "frames": 92,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42391304347826086,
+      "both_hands_frame_fraction": 0.33695652173913043,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69359",
+      "split": "val",
+      "gloss": "hat",
+      "frames": 98,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4489795918367347,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "26712",
+      "split": "train",
+      "gloss": "hat",
+      "frames": 91,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2087912087912088,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "26739",
+      "split": "train",
+      "gloss": "hat",
+      "frames": 98,
+      "shoulder_frame_fraction": 0.9897959183673469,
+      "any_hand_frame_fraction": 0.41836734693877553,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "26741",
+      "split": "train",
+      "gloss": "hat",
+      "frames": 65,
+      "shoulder_frame_fraction": 0.9846153846153847,
+      "any_hand_frame_fraction": 0.46153846153846156,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "26715",
+      "split": "train",
+      "gloss": "hat",
+      "frames": 88,
+      "shoulder_frame_fraction": 0.9886363636363636,
+      "any_hand_frame_fraction": 0.48863636363636365,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "26724",
+      "split": "train",
+      "gloss": "hat",
+      "frames": 90,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4444444444444444,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65884",
+      "split": "test",
+      "gloss": "hearing",
+      "frames": 73,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2602739726027397,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70016",
+      "split": "val",
+      "gloss": "hearing",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.42857142857142855,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "26971",
+      "split": "train",
+      "gloss": "hearing",
+      "frames": 101,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.43564356435643564,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "26982",
+      "split": "val",
+      "gloss": "hearing",
+      "frames": 100,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.26,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "31750",
+      "split": "test",
+      "gloss": "kiss",
+      "frames": 27,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4444444444444444,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65996",
+      "split": "train",
+      "gloss": "kiss",
+      "frames": 61,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2786885245901639,
+      "both_hands_frame_fraction": 0.21311475409836064,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "31759",
+      "split": "val",
+      "gloss": "kiss",
+      "frames": 54,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48148148148148145,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66008",
+      "split": "train",
+      "gloss": "language",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2833333333333333,
+      "both_hands_frame_fraction": 0.21666666666666667,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66007",
+      "split": "train",
+      "gloss": "language",
+      "frames": 53,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.41509433962264153,
+      "both_hands_frame_fraction": 0.32075471698113206,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32167",
+      "split": "test",
+      "gloss": "language",
+      "frames": 93,
+      "shoulder_frame_fraction": 0.989247311827957,
+      "any_hand_frame_fraction": 0.44086021505376344,
+      "both_hands_frame_fraction": 0.41935483870967744,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32335",
+      "split": "train",
+      "gloss": "later",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.423728813559322,
+      "both_hands_frame_fraction": 0.3898305084745763,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32337",
+      "split": "train",
+      "gloss": "later",
+      "frames": 102,
+      "shoulder_frame_fraction": 0.9901960784313726,
+      "any_hand_frame_fraction": 0.3627450980392157,
+      "both_hands_frame_fraction": 0.29411764705882354,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32338",
+      "split": "train",
+      "gloss": "later",
+      "frames": 102,
+      "shoulder_frame_fraction": 0.9901960784313726,
+      "any_hand_frame_fraction": 0.3627450980392157,
+      "both_hands_frame_fraction": 0.29411764705882354,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32325",
+      "split": "val",
+      "gloss": "later",
+      "frames": 121,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2396694214876033,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66014",
+      "split": "train",
+      "gloss": "later",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.38333333333333336,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32334",
+      "split": "train",
+      "gloss": "later",
+      "frames": 92,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3804347826086957,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "34746",
+      "split": "train",
+      "gloss": "man",
+      "frames": 81,
+      "shoulder_frame_fraction": 0.9876543209876543,
+      "any_hand_frame_fraction": 0.4567901234567901,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "34734",
+      "split": "train",
+      "gloss": "man",
+      "frames": 97,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4845360824742268,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "34738",
+      "split": "train",
+      "gloss": "man",
+      "frames": 155,
+      "shoulder_frame_fraction": 0.9935483870967742,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.23870967741935484,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "34732",
+      "split": "train",
+      "gloss": "man",
+      "frames": 72,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4861111111111111,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51057",
+      "split": "train",
+      "gloss": "shirt",
+      "frames": 100,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51081",
+      "split": "val",
+      "gloss": "shirt",
+      "frames": 78,
+      "shoulder_frame_fraction": 0.9871794871794872,
+      "any_hand_frame_fraction": 0.3974358974358974,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51056",
+      "split": "train",
+      "gloss": "shirt",
+      "frames": 99,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42424242424242425,
+      "both_hands_frame_fraction": 0.3838383838383838,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51071",
+      "split": "val",
+      "gloss": "shirt",
+      "frames": 61,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47540983606557374,
+      "both_hands_frame_fraction": 0.4426229508196721,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "55375",
+      "split": "test",
+      "gloss": "study",
+      "frames": 85,
+      "shoulder_frame_fraction": 0.9882352941176471,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.3411764705882353,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "56852",
+      "split": "train",
+      "gloss": "tall",
+      "frames": 84,
+      "shoulder_frame_fraction": 0.9880952380952381,
+      "any_hand_frame_fraction": 0.4880952380952381,
+      "both_hands_frame_fraction": 0.44047619047619047,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "56838",
+      "split": "train",
+      "gloss": "tall",
+      "frames": 96,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4583333333333333,
+      "both_hands_frame_fraction": 0.13541666666666666,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "56844",
+      "split": "train",
+      "gloss": "tall",
+      "frames": 110,
+      "shoulder_frame_fraction": 0.990909090909091,
+      "any_hand_frame_fraction": 0.34545454545454546,
+      "both_hands_frame_fraction": 0.2,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66591",
+      "split": "val",
+      "gloss": "tall",
+      "frames": 52,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46153846153846156,
+      "both_hands_frame_fraction": 0.36538461538461536,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66592",
+      "split": "train",
+      "gloss": "tall",
+      "frames": 66,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36363636363636365,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "56837",
+      "split": "train",
+      "gloss": "tall",
+      "frames": 108,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46296296296296297,
+      "both_hands_frame_fraction": 0.3333333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "56849",
+      "split": "train",
+      "gloss": "tall",
+      "frames": 65,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.49230769230769234,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70245",
+      "split": "train",
+      "gloss": "white",
+      "frames": 99,
+      "shoulder_frame_fraction": 0.98989898989899,
+      "any_hand_frame_fraction": 0.31313131313131315,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63200",
+      "split": "train",
+      "gloss": "white",
+      "frames": 109,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3211009174311927,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63210",
+      "split": "train",
+      "gloss": "white",
+      "frames": 74,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2972972972972973,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63214",
+      "split": "train",
+      "gloss": "white",
+      "frames": 72,
+      "shoulder_frame_fraction": 0.9861111111111112,
+      "any_hand_frame_fraction": 0.3194444444444444,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63201",
+      "split": "test",
+      "gloss": "white",
+      "frames": 84,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42857142857142855,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70296",
+      "split": "train",
+      "gloss": "wrong",
+      "frames": 111,
+      "shoulder_frame_fraction": 0.990990990990991,
+      "any_hand_frame_fraction": 0.1981981981981982,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70132",
+      "split": "train",
+      "gloss": "wrong",
+      "frames": 131,
+      "shoulder_frame_fraction": 0.9923664122137404,
+      "any_hand_frame_fraction": 0.17557251908396945,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64093",
+      "split": "train",
+      "gloss": "wrong",
+      "frames": 47,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.425531914893617,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64084",
+      "split": "train",
+      "gloss": "wrong",
+      "frames": 90,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3888888888888889,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "64097",
+      "split": "test",
+      "gloss": "wrong",
+      "frames": 80,
+      "shoulder_frame_fraction": 0.9875,
+      "any_hand_frame_fraction": 0.35,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "00639",
+      "split": "train",
+      "gloss": "accident",
+      "frames": 105,
+      "shoulder_frame_fraction": 0.9904761904761905,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.34285714285714286,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "00624",
+      "split": "train",
+      "gloss": "accident",
+      "frames": 109,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.41284403669724773,
+      "both_hands_frame_fraction": 0.3944954128440367,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70309",
+      "split": "train",
+      "gloss": "apple",
+      "frames": 108,
+      "shoulder_frame_fraction": 0.9907407407407407,
+      "any_hand_frame_fraction": 0.37037037037037035,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65086",
+      "split": "val",
+      "gloss": "apple",
+      "frames": 76,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4605263157894737,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65084",
+      "split": "train",
+      "gloss": "apple",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4838709677419355,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70107",
+      "split": "train",
+      "gloss": "bird",
+      "frames": 103,
+      "shoulder_frame_fraction": 0.9902912621359223,
+      "any_hand_frame_fraction": 0.3106796116504854,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06334",
+      "split": "train",
+      "gloss": "bird",
+      "frames": 19,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3684210526315789,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06335",
+      "split": "test",
+      "gloss": "bird",
+      "frames": 111,
+      "shoulder_frame_fraction": 0.990990990990991,
+      "any_hand_frame_fraction": 0.4774774774774775,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65187",
+      "split": "train",
+      "gloss": "bird",
+      "frames": 66,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3939393939393939,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06343",
+      "split": "train",
+      "gloss": "bird",
+      "frames": 82,
+      "shoulder_frame_fraction": 0.9878048780487805,
+      "any_hand_frame_fraction": 0.4634146341463415,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06331",
+      "split": "train",
+      "gloss": "bird",
+      "frames": 63,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3333333333333333,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06332",
+      "split": "train",
+      "gloss": "bird",
+      "frames": 91,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4725274725274725,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70379",
+      "split": "val",
+      "gloss": "change",
+      "frames": 116,
+      "shoulder_frame_fraction": 0.9913793103448276,
+      "any_hand_frame_fraction": 0.35344827586206895,
+      "both_hands_frame_fraction": 0.3017241379310345,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "09950",
+      "split": "test",
+      "gloss": "change",
+      "frames": 69,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4057971014492754,
+      "both_hands_frame_fraction": 0.30434782608695654,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "09970",
+      "split": "train",
+      "gloss": "change",
+      "frames": 84,
+      "shoulder_frame_fraction": 0.9880952380952381,
+      "any_hand_frame_fraction": 0.44047619047619047,
+      "both_hands_frame_fraction": 0.4166666666666667,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "09954",
+      "split": "train",
+      "gloss": "change",
+      "frames": 31,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4838709677419355,
+      "both_hands_frame_fraction": 0.12903225806451613,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69274",
+      "split": "val",
+      "gloss": "color",
+      "frames": 107,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3644859813084112,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11767",
+      "split": "train",
+      "gloss": "color",
+      "frames": 74,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.44594594594594594,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11777",
+      "split": "train",
+      "gloss": "color",
+      "frames": 87,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3103448275862069,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11780",
+      "split": "train",
+      "gloss": "color",
+      "frames": 90,
+      "shoulder_frame_fraction": 0.9888888888888889,
+      "any_hand_frame_fraction": 0.37777777777777777,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "11769",
+      "split": "train",
+      "gloss": "color",
+      "frames": 43,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4883720930232558,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13337",
+      "split": "train",
+      "gloss": "corn",
+      "frames": 80,
+      "shoulder_frame_fraction": 0.9875,
+      "any_hand_frame_fraction": 0.425,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13325",
+      "split": "test",
+      "gloss": "corn",
+      "frames": 81,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4074074074074074,
+      "both_hands_frame_fraction": 0.35802469135802467,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13326",
+      "split": "train",
+      "gloss": "corn",
+      "frames": 90,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.35555555555555557,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13327",
+      "split": "train",
+      "gloss": "corn",
+      "frames": 86,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.37209302325581395,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65408",
+      "split": "train",
+      "gloss": "corn",
+      "frames": 63,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42857142857142855,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13323",
+      "split": "train",
+      "gloss": "corn",
+      "frames": 57,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3684210526315789,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "13710",
+      "split": "test",
+      "gloss": "cow",
+      "frames": 78,
+      "shoulder_frame_fraction": 0.9871794871794872,
+      "any_hand_frame_fraction": 0.46153846153846156,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70152",
+      "split": "train",
+      "gloss": "dance",
+      "frames": 111,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3063063063063063,
+      "both_hands_frame_fraction": 0.2882882882882883,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65434",
+      "split": "train",
+      "gloss": "dance",
+      "frames": 69,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.34782608695652173,
+      "both_hands_frame_fraction": 0.34782608695652173,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "14633",
+      "split": "train",
+      "gloss": "dance",
+      "frames": 108,
+      "shoulder_frame_fraction": 0.9907407407407407,
+      "any_hand_frame_fraction": 0.48148148148148145,
+      "both_hands_frame_fraction": 0.42592592592592593,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65439",
+      "split": "train",
+      "gloss": "dark",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4666666666666667,
+      "both_hands_frame_fraction": 0.4166666666666667,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65440",
+      "split": "train",
+      "gloss": "dark",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.43548387096774194,
+      "both_hands_frame_fraction": 0.4032258064516129,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "14671",
+      "split": "train",
+      "gloss": "dark",
+      "frames": 90,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.37777777777777777,
+      "both_hands_frame_fraction": 0.15555555555555556,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "14685",
+      "split": "test",
+      "gloss": "dark",
+      "frames": 99,
+      "shoulder_frame_fraction": 0.98989898989899,
+      "any_hand_frame_fraction": 0.41414141414141414,
+      "both_hands_frame_fraction": 0.12121212121212122,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70049",
+      "split": "train",
+      "gloss": "doctor",
+      "frames": 85,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4117647058823529,
+      "both_hands_frame_fraction": 0.36470588235294116,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17015",
+      "split": "train",
+      "gloss": "doctor",
+      "frames": 109,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.41284403669724773,
+      "both_hands_frame_fraction": 0.3302752293577982,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17016",
+      "split": "val",
+      "gloss": "doctor",
+      "frames": 105,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.49523809523809526,
+      "both_hands_frame_fraction": 0.4095238095238095,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "17026",
+      "split": "train",
+      "gloss": "doctor",
+      "frames": 103,
+      "shoulder_frame_fraction": 0.9902912621359223,
+      "any_hand_frame_fraction": 0.44660194174757284,
+      "both_hands_frame_fraction": 0.4174757281553398,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68044",
+      "split": "train",
+      "gloss": "eat",
+      "frames": 64,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.390625,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65601",
+      "split": "train",
+      "gloss": "eat",
+      "frames": 61,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36065573770491804,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "18335",
+      "split": "train",
+      "gloss": "eat",
+      "frames": 84,
+      "shoulder_frame_fraction": 0.9880952380952381,
+      "any_hand_frame_fraction": 0.47619047619047616,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "18324",
+      "split": "train",
+      "gloss": "eat",
+      "frames": 67,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.34328358208955223,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "18325",
+      "split": "train",
+      "gloss": "eat",
+      "frames": 72,
+      "shoulder_frame_fraction": 0.9861111111111112,
+      "any_hand_frame_fraction": 0.4444444444444444,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70051",
+      "split": "train",
+      "gloss": "enjoy",
+      "frames": 116,
+      "shoulder_frame_fraction": 0.9913793103448276,
+      "any_hand_frame_fraction": 0.39655172413793105,
+      "both_hands_frame_fraction": 0.3879310344827586,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65635",
+      "split": "train",
+      "gloss": "enjoy",
+      "frames": 73,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4520547945205479,
+      "both_hands_frame_fraction": 0.4383561643835616,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70376",
+      "split": "train",
+      "gloss": "forget",
+      "frames": 96,
+      "shoulder_frame_fraction": 0.9895833333333334,
+      "any_hand_frame_fraction": 0.34375,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "22967",
+      "split": "train",
+      "gloss": "forget",
+      "frames": 76,
+      "shoulder_frame_fraction": 0.9868421052631579,
+      "any_hand_frame_fraction": 0.4473684210526316,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "24658",
+      "split": "val",
+      "gloss": "give",
+      "frames": 54,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48148148148148145,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "24660",
+      "split": "train",
+      "gloss": "give",
+      "frames": 70,
+      "shoulder_frame_fraction": 0.9857142857142858,
+      "any_hand_frame_fraction": 0.37142857142857144,
+      "both_hands_frame_fraction": 0.2857142857142857,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "24638",
+      "split": "train",
+      "gloss": "give",
+      "frames": 30,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4666666666666667,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "24636",
+      "split": "test",
+      "gloss": "give",
+      "frames": 92,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.05434782608695652,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66010",
+      "split": "train",
+      "gloss": "last",
+      "frames": 52,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.40384615384615385,
+      "both_hands_frame_fraction": 0.28846153846153844,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32263",
+      "split": "val",
+      "gloss": "last",
+      "frames": 97,
+      "shoulder_frame_fraction": 0.9896907216494846,
+      "any_hand_frame_fraction": 0.38144329896907214,
+      "both_hands_frame_fraction": 0.30927835051546393,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32260",
+      "split": "train",
+      "gloss": "last",
+      "frames": 94,
+      "shoulder_frame_fraction": 0.9893617021276596,
+      "any_hand_frame_fraction": 0.43617021276595747,
+      "both_hands_frame_fraction": 0.24468085106382978,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32261",
+      "split": "train",
+      "gloss": "last",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.43956043956043955,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66112",
+      "split": "val",
+      "gloss": "meet",
+      "frames": 71,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4788732394366197,
+      "both_hands_frame_fraction": 0.4507042253521127,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "35509",
+      "split": "train",
+      "gloss": "meet",
+      "frames": 94,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3404255319148936,
+      "both_hands_frame_fraction": 0.07446808510638298,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "35519",
+      "split": "train",
+      "gloss": "meet",
+      "frames": 112,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2857142857142857,
+      "both_hands_frame_fraction": 0.23214285714285715,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "35523",
+      "split": "train",
+      "gloss": "meet",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.38961038961038963,
+      "both_hands_frame_fraction": 0.36363636363636365,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70246",
+      "split": "train",
+      "gloss": "pink",
+      "frames": 108,
+      "shoulder_frame_fraction": 0.9907407407407407,
+      "any_hand_frame_fraction": 0.2777777777777778,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "42831",
+      "split": "train",
+      "gloss": "pink",
+      "frames": 41,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.24390243902439024,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "42832",
+      "split": "train",
+      "gloss": "pink",
+      "frames": 40,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.325,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66296",
+      "split": "train",
+      "gloss": "pink",
+      "frames": 65,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.49230769230769234,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "42829",
+      "split": "train",
+      "gloss": "pink",
+      "frames": 82,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3170731707317073,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "42840",
+      "split": "test",
+      "gloss": "pink",
+      "frames": 87,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3563218390804598,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "42843",
+      "split": "train",
+      "gloss": "pink",
+      "frames": 73,
+      "shoulder_frame_fraction": 0.9863013698630136,
+      "any_hand_frame_fraction": 0.3287671232876712,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69431",
+      "split": "test",
+      "gloss": "pizza",
+      "frames": 75,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "42977",
+      "split": "val",
+      "gloss": "pizza",
+      "frames": 90,
+      "shoulder_frame_fraction": 0.9888888888888889,
+      "any_hand_frame_fraction": 0.32222222222222224,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66297",
+      "split": "train",
+      "gloss": "pizza",
+      "frames": 54,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3888888888888889,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "43179",
+      "split": "train",
+      "gloss": "play",
+      "frames": 78,
+      "shoulder_frame_fraction": 0.9871794871794872,
+      "any_hand_frame_fraction": 0.44871794871794873,
+      "both_hands_frame_fraction": 0.34615384615384615,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "43180",
+      "split": "train",
+      "gloss": "play",
+      "frames": 79,
+      "shoulder_frame_fraction": 0.9873417721518988,
+      "any_hand_frame_fraction": 0.379746835443038,
+      "both_hands_frame_fraction": 0.2911392405063291,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "43167",
+      "split": "train",
+      "gloss": "play",
+      "frames": 72,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4444444444444444,
+      "both_hands_frame_fraction": 0.3472222222222222,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70207",
+      "split": "train",
+      "gloss": "school",
+      "frames": 111,
+      "shoulder_frame_fraction": 0.990990990990991,
+      "any_hand_frame_fraction": 0.21621621621621623,
+      "both_hands_frame_fraction": 0.036036036036036036,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68145",
+      "split": "test",
+      "gloss": "school",
+      "frames": 115,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4434782608695652,
+      "both_hands_frame_fraction": 0.3739130434782609,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "49606",
+      "split": "val",
+      "gloss": "school",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.3793103448275862,
+      "both_hands_frame_fraction": 0.14942528735632185,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "49596",
+      "split": "train",
+      "gloss": "school",
+      "frames": 67,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.44776119402985076,
+      "both_hands_frame_fraction": 0.23880597014925373,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "50037",
+      "split": "train",
+      "gloss": "secretary",
+      "frames": 119,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36134453781512604,
+      "both_hands_frame_fraction": 0.3445378151260504,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "50038",
+      "split": "train",
+      "gloss": "secretary",
+      "frames": 95,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.2631578947368421,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "50052",
+      "split": "val",
+      "gloss": "secretary",
+      "frames": 81,
+      "shoulder_frame_fraction": 0.9876543209876543,
+      "any_hand_frame_fraction": 0.345679012345679,
+      "both_hands_frame_fraction": 0.2839506172839506,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70355",
+      "split": "train",
+      "gloss": "short",
+      "frames": 106,
+      "shoulder_frame_fraction": 0.9905660377358491,
+      "any_hand_frame_fraction": 0.46226415094339623,
+      "both_hands_frame_fraction": 0.3867924528301887,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51223",
+      "split": "train",
+      "gloss": "short",
+      "frames": 33,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42424242424242425,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51227",
+      "split": "val",
+      "gloss": "short",
+      "frames": 102,
+      "shoulder_frame_fraction": 0.9901960784313726,
+      "any_hand_frame_fraction": 0.3431372549019608,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66469",
+      "split": "train",
+      "gloss": "short",
+      "frames": 38,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.39473684210526316,
+      "both_hands_frame_fraction": 0.3157894736842105,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51220",
+      "split": "val",
+      "gloss": "short",
+      "frames": 70,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.37142857142857144,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51235",
+      "split": "train",
+      "gloss": "short",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.3626373626373626,
+      "both_hands_frame_fraction": 0.2967032967032967,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "51236",
+      "split": "train",
+      "gloss": "short",
+      "frames": 96,
+      "shoulder_frame_fraction": 0.9895833333333334,
+      "any_hand_frame_fraction": 0.34375,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70356",
+      "split": "train",
+      "gloss": "time",
+      "frames": 95,
+      "shoulder_frame_fraction": 0.9894736842105263,
+      "any_hand_frame_fraction": 0.3684210526315789,
+      "both_hands_frame_fraction": 0.29473684210526313,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68171",
+      "split": "train",
+      "gloss": "time",
+      "frames": 81,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48148148148148145,
+      "both_hands_frame_fraction": 0.4444444444444444,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66644",
+      "split": "train",
+      "gloss": "time",
+      "frames": 76,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.35526315789473684,
+      "both_hands_frame_fraction": 0.32894736842105265,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "58497",
+      "split": "val",
+      "gloss": "time",
+      "frames": 114,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.38596491228070173,
+      "both_hands_frame_fraction": 0.3333333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "58508",
+      "split": "train",
+      "gloss": "time",
+      "frames": 76,
+      "shoulder_frame_fraction": 0.9868421052631579,
+      "any_hand_frame_fraction": 0.4342105263157895,
+      "both_hands_frame_fraction": 0.3684210526315789,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "58498",
+      "split": "train",
+      "gloss": "time",
+      "frames": 75,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4666666666666667,
+      "both_hands_frame_fraction": 0.4266666666666667,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "69524",
+      "split": "val",
+      "gloss": "want",
+      "frames": 69,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4927536231884058,
+      "both_hands_frame_fraction": 0.42028985507246375,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68178",
+      "split": "train",
+      "gloss": "want",
+      "frames": 72,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4305555555555556,
+      "both_hands_frame_fraction": 0.4027777777777778,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62246",
+      "split": "train",
+      "gloss": "want",
+      "frames": 75,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.49333333333333335,
+      "both_hands_frame_fraction": 0.4,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62244",
+      "split": "val",
+      "gloss": "want",
+      "frames": 82,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.24390243902439024,
+      "both_hands_frame_fraction": 0.1951219512195122,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "62259",
+      "split": "train",
+      "gloss": "want",
+      "frames": 84,
+      "shoulder_frame_fraction": 0.9880952380952381,
+      "any_hand_frame_fraction": 0.39285714285714285,
+      "both_hands_frame_fraction": 0.32142857142857145,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63806",
+      "split": "train",
+      "gloss": "work",
+      "frames": 72,
+      "shoulder_frame_fraction": 0.9861111111111112,
+      "any_hand_frame_fraction": 0.4861111111111111,
+      "both_hands_frame_fraction": 0.3472222222222222,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63789",
+      "split": "test",
+      "gloss": "work",
+      "frames": 64,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.359375,
+      "both_hands_frame_fraction": 0.328125,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "63790",
+      "split": "train",
+      "gloss": "work",
+      "frames": 80,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4875,
+      "both_hands_frame_fraction": 0.375,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "01383",
+      "split": "train",
+      "gloss": "africa",
+      "frames": 146,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2671232876712329,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65029",
+      "split": "train",
+      "gloss": "africa",
+      "frames": 66,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4393939393939394,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "01393",
+      "split": "train",
+      "gloss": "africa",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4067796610169492,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05230",
+      "split": "train",
+      "gloss": "basketball",
+      "frames": 97,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4948453608247423,
+      "both_hands_frame_fraction": 0.30927835051546393,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05234",
+      "split": "train",
+      "gloss": "basketball",
+      "frames": 94,
+      "shoulder_frame_fraction": 0.9893617021276596,
+      "any_hand_frame_fraction": 0.48936170212765956,
+      "both_hands_frame_fraction": 0.44680851063829785,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65144",
+      "split": "train",
+      "gloss": "basketball",
+      "frames": 53,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4716981132075472,
+      "both_hands_frame_fraction": 0.3584905660377358,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "05243",
+      "split": "train",
+      "gloss": "basketball",
+      "frames": 80,
+      "shoulder_frame_fraction": 0.9875,
+      "any_hand_frame_fraction": 0.35,
+      "both_hands_frame_fraction": 0.3,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65192",
+      "split": "train",
+      "gloss": "birthday",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.45161290322580644,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70359",
+      "split": "train",
+      "gloss": "birthday",
+      "frames": 99,
+      "shoulder_frame_fraction": 0.98989898989899,
+      "any_hand_frame_fraction": 0.3333333333333333,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06369",
+      "split": "val",
+      "gloss": "birthday",
+      "frames": 79,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46835443037974683,
+      "both_hands_frame_fraction": 0.4050632911392405,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06371",
+      "split": "train",
+      "gloss": "birthday",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.4025974025974026,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "06360",
+      "split": "test",
+      "gloss": "birthday",
+      "frames": 89,
+      "shoulder_frame_fraction": 0.9887640449438202,
+      "any_hand_frame_fraction": 0.449438202247191,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70242",
+      "split": "train",
+      "gloss": "brown",
+      "frames": 95,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.35789473684210527,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07963",
+      "split": "train",
+      "gloss": "brown",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.47126436781609193,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07967",
+      "split": "train",
+      "gloss": "brown",
+      "frames": 87,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.40229885057471265,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65263",
+      "split": "train",
+      "gloss": "brown",
+      "frames": 66,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3484848484848485,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07960",
+      "split": "train",
+      "gloss": "brown",
+      "frames": 78,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46153846153846156,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07973",
+      "split": "val",
+      "gloss": "brown",
+      "frames": 83,
+      "shoulder_frame_fraction": 0.9879518072289156,
+      "any_hand_frame_fraction": 0.3493975903614458,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "07962",
+      "split": "train",
+      "gloss": "brown",
+      "frames": 50,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65278",
+      "split": "train",
+      "gloss": "but",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4,
+      "both_hands_frame_fraction": 0.31666666666666665,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08424",
+      "split": "train",
+      "gloss": "but",
+      "frames": 62,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.45161290322580644,
+      "both_hands_frame_fraction": 0.3870967741935484,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08437",
+      "split": "train",
+      "gloss": "but",
+      "frames": 85,
+      "shoulder_frame_fraction": 0.9882352941176471,
+      "any_hand_frame_fraction": 0.38823529411764707,
+      "both_hands_frame_fraction": 0.29411764705882354,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "08426",
+      "split": "val",
+      "gloss": "but",
+      "frames": 86,
+      "shoulder_frame_fraction": 0.9883720930232558,
+      "any_hand_frame_fraction": 0.4883720930232558,
+      "both_hands_frame_fraction": 0.46511627906976744,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "10147",
+      "split": "train",
+      "gloss": "cheat",
+      "frames": 72,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3055555555555556,
+      "both_hands_frame_fraction": 0.25,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "10166",
+      "split": "train",
+      "gloss": "cheat",
+      "frames": 94,
+      "shoulder_frame_fraction": 0.9893617021276596,
+      "any_hand_frame_fraction": 0.3829787234042553,
+      "both_hands_frame_fraction": 0.23404255319148937,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65341",
+      "split": "val",
+      "gloss": "cheat",
+      "frames": 76,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2894736842105263,
+      "both_hands_frame_fraction": 0.2631578947368421,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "10895",
+      "split": "train",
+      "gloss": "city",
+      "frames": 127,
+      "shoulder_frame_fraction": 0.9921259842519685,
+      "any_hand_frame_fraction": 0.4330708661417323,
+      "both_hands_frame_fraction": 0.3858267716535433,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65362",
+      "split": "train",
+      "gloss": "city",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.43333333333333335,
+      "both_hands_frame_fraction": 0.43333333333333335,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65363",
+      "split": "train",
+      "gloss": "city",
+      "frames": 80,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.25,
+      "both_hands_frame_fraction": 0.2125,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "10902",
+      "split": "train",
+      "gloss": "city",
+      "frames": 86,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4069767441860465,
+      "both_hands_frame_fraction": 0.38372093023255816,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "10904",
+      "split": "val",
+      "gloss": "city",
+      "frames": 92,
+      "shoulder_frame_fraction": 0.9891304347826086,
+      "any_hand_frame_fraction": 0.2717391304347826,
+      "both_hands_frame_fraction": 0.22826086956521738,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "10893",
+      "split": "train",
+      "gloss": "city",
+      "frames": 58,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.41379310344827586,
+      "both_hands_frame_fraction": 0.3793103448275862,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70030",
+      "split": "test",
+      "gloss": "cook",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.3516483516483517,
+      "both_hands_frame_fraction": 0.3516483516483517,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "68029",
+      "split": "train",
+      "gloss": "cook",
+      "frames": 86,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.36046511627906974,
+      "both_hands_frame_fraction": 0.23255813953488372,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70119",
+      "split": "test",
+      "gloss": "decide",
+      "frames": 105,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.26666666666666666,
+      "both_hands_frame_fraction": 0.11428571428571428,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65449",
+      "split": "train",
+      "gloss": "decide",
+      "frames": 54,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42592592592592593,
+      "both_hands_frame_fraction": 0.3148148148148148,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "65450",
+      "split": "train",
+      "gloss": "decide",
+      "frames": 60,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3,
+      "both_hands_frame_fraction": 0.2,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "15041",
+      "split": "train",
+      "gloss": "decide",
+      "frames": 79,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46835443037974683,
+      "both_hands_frame_fraction": 0.21518987341772153,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70029",
+      "split": "test",
+      "gloss": "full",
+      "frames": 111,
+      "shoulder_frame_fraction": 0.990990990990991,
+      "any_hand_frame_fraction": 0.1981981981981982,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "23782",
+      "split": "train",
+      "gloss": "full",
+      "frames": 73,
+      "shoulder_frame_fraction": 0.9863013698630136,
+      "any_hand_frame_fraction": 0.410958904109589,
+      "both_hands_frame_fraction": 0.3150684931506849,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "23766",
+      "split": "train",
+      "gloss": "full",
+      "frames": 76,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.47368421052631576,
+      "both_hands_frame_fraction": 0.3815789473684211,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "23769",
+      "split": "train",
+      "gloss": "full",
+      "frames": 101,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.46534653465346537,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70295",
+      "split": "train",
+      "gloss": "how",
+      "frames": 93,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.40860215053763443,
+      "both_hands_frame_fraction": 0.3548387096774194,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "28212",
+      "split": "train",
+      "gloss": "how",
+      "frames": 63,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.49206349206349204,
+      "both_hands_frame_fraction": 0.4444444444444444,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "28214",
+      "split": "train",
+      "gloss": "how",
+      "frames": 81,
+      "shoulder_frame_fraction": 0.9876543209876543,
+      "any_hand_frame_fraction": 0.35802469135802467,
+      "both_hands_frame_fraction": 0.3333333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "30849",
+      "split": "val",
+      "gloss": "jacket",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.38961038961038963,
+      "both_hands_frame_fraction": 0.36363636363636365,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "30835",
+      "split": "train",
+      "gloss": "jacket",
+      "frames": 67,
+      "shoulder_frame_fraction": 0.9850746268656716,
+      "any_hand_frame_fraction": 0.47761194029850745,
+      "both_hands_frame_fraction": 0.43283582089552236,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66038",
+      "split": "train",
+      "gloss": "letter",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3728813559322034,
+      "both_hands_frame_fraction": 0.288135593220339,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70325",
+      "split": "test",
+      "gloss": "letter",
+      "frames": 104,
+      "shoulder_frame_fraction": 0.9903846153846154,
+      "any_hand_frame_fraction": 0.4326923076923077,
+      "both_hands_frame_fraction": 0.3557692307692308,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "32950",
+      "split": "test",
+      "gloss": "letter",
+      "frames": 93,
+      "shoulder_frame_fraction": 0.989247311827957,
+      "any_hand_frame_fraction": 0.3870967741935484,
+      "both_hands_frame_fraction": 0.3225806451612903,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "35456",
+      "split": "train",
+      "gloss": "medicine",
+      "frames": 118,
+      "shoulder_frame_fraction": 0.9915254237288136,
+      "any_hand_frame_fraction": 0.3813559322033898,
+      "both_hands_frame_fraction": 0.3559322033898305,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "35452",
+      "split": "train",
+      "gloss": "medicine",
+      "frames": 106,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.33962264150943394,
+      "both_hands_frame_fraction": 0.018867924528301886,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "35467",
+      "split": "train",
+      "gloss": "medicine",
+      "frames": 85,
+      "shoulder_frame_fraction": 0.9882352941176471,
+      "any_hand_frame_fraction": 0.35294117647058826,
+      "both_hands_frame_fraction": 0.29411764705882354,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70237",
+      "split": "test",
+      "gloss": "need",
+      "frames": 117,
+      "shoulder_frame_fraction": 0.9914529914529915,
+      "any_hand_frame_fraction": 0.28205128205128205,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "37881",
+      "split": "train",
+      "gloss": "need",
+      "frames": 103,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.34951456310679613,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "37894",
+      "split": "train",
+      "gloss": "need",
+      "frames": 83,
+      "shoulder_frame_fraction": 0.9879518072289156,
+      "any_hand_frame_fraction": 0.30120481927710846,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "40845",
+      "split": "train",
+      "gloss": "paint",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4745762711864407,
+      "both_hands_frame_fraction": 0.423728813559322,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70211",
+      "split": "train",
+      "gloss": "paper",
+      "frames": 100,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.38,
+      "both_hands_frame_fraction": 0.14,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "41025",
+      "split": "train",
+      "gloss": "paper",
+      "frames": 77,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4025974025974026,
+      "both_hands_frame_fraction": 0.33766233766233766,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "41037",
+      "split": "train",
+      "gloss": "paper",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.40229885057471265,
+      "both_hands_frame_fraction": 0.3333333333333333,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "41026",
+      "split": "train",
+      "gloss": "paper",
+      "frames": 78,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48717948717948717,
+      "both_hands_frame_fraction": 0.358974358974359,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70378",
+      "split": "train",
+      "gloss": "pull",
+      "frames": 111,
+      "shoulder_frame_fraction": 0.990990990990991,
+      "any_hand_frame_fraction": 0.38738738738738737,
+      "both_hands_frame_fraction": 0.36036036036036034,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "45268",
+      "split": "train",
+      "gloss": "pull",
+      "frames": 69,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.391304347826087,
+      "both_hands_frame_fraction": 0.37681159420289856,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66351",
+      "split": "train",
+      "gloss": "pull",
+      "frames": 52,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4807692307692308,
+      "both_hands_frame_fraction": 0.40384615384615385,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "45273",
+      "split": "train",
+      "gloss": "pull",
+      "frames": 87,
+      "shoulder_frame_fraction": 0.9885057471264368,
+      "any_hand_frame_fraction": 0.47126436781609193,
+      "both_hands_frame_fraction": 0.42528735632183906,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70247",
+      "split": "train",
+      "gloss": "purple",
+      "frames": 100,
+      "shoulder_frame_fraction": 0.99,
+      "any_hand_frame_fraction": 0.33,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "45439",
+      "split": "train",
+      "gloss": "purple",
+      "frames": 87,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3793103448275862,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66355",
+      "split": "train",
+      "gloss": "purple",
+      "frames": 63,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.42857142857142855,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "45443",
+      "split": "train",
+      "gloss": "purple",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.4025974025974026,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "45433",
+      "split": "train",
+      "gloss": "purple",
+      "frames": 92,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.31521739130434784,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "45434",
+      "split": "train",
+      "gloss": "purple",
+      "frames": 77,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.4805194805194805,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "45435",
+      "split": "val",
+      "gloss": "purple",
+      "frames": 53,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.39622641509433965,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "48105",
+      "split": "train",
+      "gloss": "right",
+      "frames": 83,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3373493975903614,
+      "both_hands_frame_fraction": 0.25301204819277107,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "48124",
+      "split": "val",
+      "gloss": "right",
+      "frames": 73,
+      "shoulder_frame_fraction": 0.9863013698630136,
+      "any_hand_frame_fraction": 0.4520547945205479,
+      "both_hands_frame_fraction": 0.3287671232876712,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "48126",
+      "split": "test",
+      "gloss": "right",
+      "frames": 79,
+      "shoulder_frame_fraction": 0.9873417721518988,
+      "any_hand_frame_fraction": 0.4177215189873418,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "48109",
+      "split": "train",
+      "gloss": "right",
+      "frames": 77,
+      "shoulder_frame_fraction": 0.987012987012987,
+      "any_hand_frame_fraction": 0.4935064935064935,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "49173",
+      "split": "test",
+      "gloss": "same",
+      "frames": 102,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.39215686274509803,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "49188",
+      "split": "train",
+      "gloss": "same",
+      "frames": 80,
+      "shoulder_frame_fraction": 0.9875,
+      "any_hand_frame_fraction": 0.3125,
+      "both_hands_frame_fraction": 0.3125,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70335",
+      "split": "train",
+      "gloss": "son",
+      "frames": 120,
+      "shoulder_frame_fraction": 0.9916666666666667,
+      "any_hand_frame_fraction": 0.425,
+      "both_hands_frame_fraction": 0.30833333333333335,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66532",
+      "split": "train",
+      "gloss": "son",
+      "frames": 59,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.423728813559322,
+      "both_hands_frame_fraction": 0.288135593220339,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "53279",
+      "split": "train",
+      "gloss": "son",
+      "frames": 80,
+      "shoulder_frame_fraction": 0.9875,
+      "any_hand_frame_fraction": 0.4125,
+      "both_hands_frame_fraction": 0.2625,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57276",
+      "split": "train",
+      "gloss": "tell",
+      "frames": 94,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.32978723404255317,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "57291",
+      "split": "train",
+      "gloss": "tell",
+      "frames": 82,
+      "shoulder_frame_fraction": 0.975609756097561,
+      "any_hand_frame_fraction": 0.32926829268292684,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "70026",
+      "split": "test",
+      "gloss": "thursday",
+      "frames": 91,
+      "shoulder_frame_fraction": 0.989010989010989,
+      "any_hand_frame_fraction": 0.46153846153846156,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "58367",
+      "split": "train",
+      "gloss": "thursday",
+      "frames": 47,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.48936170212765956,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66637",
+      "split": "train",
+      "gloss": "thursday",
+      "frames": 69,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.2608695652173913,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66638",
+      "split": "train",
+      "gloss": "thursday",
+      "frames": 74,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.3108108108108108,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66639",
+      "split": "train",
+      "gloss": "thursday",
+      "frames": 61,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.26229508196721313,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "66640",
+      "split": "train",
+      "gloss": "thursday",
+      "frames": 56,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.32142857142857145,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "58370",
+      "split": "val",
+      "gloss": "thursday",
+      "frames": 71,
+      "shoulder_frame_fraction": 0.9859154929577465,
+      "any_hand_frame_fraction": 0.4225352112676056,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    },
+    {
+      "video_id": "58360",
+      "split": "train",
+      "gloss": "thursday",
+      "frames": 83,
+      "shoulder_frame_fraction": 1.0,
+      "any_hand_frame_fraction": 0.25301204819277107,
+      "both_hands_frame_fraction": 0.0,
+      "review_flags": [
+        "hands_under_half_frames"
+      ]
+    }
+  ]
+}

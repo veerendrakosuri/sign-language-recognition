@@ -73,7 +73,7 @@ Each cache file contains `points` with shape `(T, 75, 3)` and `valid` with shape
 
 Inspect at least five clips per class for your small prototype. Confirm that sign motion is complete, one signer is visible, wrists and shoulders are tracked, and clips are not reversed or double-trimmed. Use the notebook to inspect cached arrays and sample frames. Read `extraction_report.json`; failed samples are counted instead of silently treated as successful data.
 
-The audit writes `runs/landmark-audit.json`. Its low-hand-coverage flags are prompts for visual review, not automatic proof that a clip or label is wrong. The [current partial-data run](../reports/wlasl100-mirror-run-2026-10-13/README.md) found 325 such flags in 1,013 caches.
+The audit writes `runs/landmark-audit.json`. Its low-hand-coverage flags are prompts for visual review, not automatic proof that a clip or label is wrong. The [current partial-data run](../reports/wlasl100-expanded-run-2026-10-18/README.md) found 438 such flags in 1,466 caches.
 
 **Checkpoint:** each intended class has cached train examples and a useful amount of validation/test coverage. A class with no train samples stops training. Partially missing validation/test classes remain in reporting; inspect them explicitly.
 

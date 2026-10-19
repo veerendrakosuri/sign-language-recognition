@@ -1,0 +1,15 @@
+{
+  "command": "baseline",
+  "manifest": "data\\processed\\manifest.csv",
+  "labels": "data\\processed\\labels.json",
+  "cache": "data\\landmarks-expanded",
+  "output": "runs\\baseline-expanded-v1",
+  "frames": 32,
+  "seed": 42,
+  "summary": "observed_mean",
+  "manifest_sha256": "e70ebd92d1a6e40de42263269eaa605591b5e8549d335d3609b815ef36c15bc7",
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "numpy": "2.5.4",
+  "sklearn": "1.9.1"
+}

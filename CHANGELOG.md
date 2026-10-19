@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 — 2026-10-18
+
+- Expand the usable official WLASL100 split from 1,013 to 1,466 clips using selectively recovered public raw-video archives; source videos and landmark caches remain excluded from releases.
+- Retrain the observed-frame baseline on 1,022 training clips after validation-only selection on 243 clips.
+- Improve the measured partial-data result to 0.5323 top-1, 0.7960 top-5, and 0.4916 macro F1 on 201/258 official test clips.
+- Publish the expanded run's coverage, cache audit, exact evaluated IDs, hashes, predictions, per-class metrics, and confusion matrix.
+- Update the browser research preview to use the expanded baseline weights. Browser-upload and live-webcam accuracy remain unmeasured.
+
 ## 0.3.0 — 2026-10-17
 
 - Add versioned `observed_mean` baseline preprocessing so missing landmark frames are excluded from each landmark's mean; old checkpoints continue to use `zero_mean`.
