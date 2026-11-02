@@ -17,7 +17,7 @@ from signlang import SignRecognizer
 
 
 def main():
-    assert importlib.metadata.version("sign-language-recognition") == signlang.__version__
+    assert importlib.metadata.version("signlab-asl") == signlang.__version__
     assert "site-packages" in str(Path(signlang.__file__).resolve()), signlang.__file__
     for optional in ("torch", "sklearn", "cv2", "mediapipe"):
         assert importlib.util.find_spec(optional) is None, f"Core install unexpectedly includes {optional}"

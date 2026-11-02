@@ -4,7 +4,7 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 
 **Locked project direction:** the open-source Python package and CLI are the primary deliverable. The existing website is the demonstration interface. The [agreed scope and release plan](docs/PROJECT_DIRECTION.md) distinguish existing functionality from the work required for a packaged release.
 
-**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.4.0 includes `SignRecognizer`, prediction/model-export commands, cache-quality auditing, improved missing-landmark handling, and the expanded reference baseline. The core needs NumPy; video, baseline-checkpoint, and training dependencies are optional. Install release archives from [GitHub Releases](https://github.com/veerendrakosuri/sign-language-recognition/releases); PyPI publication is not claimed.
+**Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.5.0 publishes the package as `signlab-asl` while retaining the `signlang` command and Python imports. It includes `SignRecognizer`, prediction/model-export commands, cache-quality auditing, improved missing-landmark handling, and the expanded reference baseline.
 
 **[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
 

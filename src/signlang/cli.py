@@ -182,7 +182,7 @@ def main(argv=None):
     except (ValueError, OSError, RuntimeError, ImportError, EOFError) as error:
         sys.stderr.write(f"signlang: error: {error}\n")
         if isinstance(error, ImportError):
-            sys.stderr.write('Optional workflows may require: pip install "sign-language-recognition[train,vision]"\n')
+            sys.stderr.write('Optional workflows may require: pip install "signlab-asl[train,vision]"\n')
         return 1
     except KeyboardInterrupt:
         sys.stderr.write("signlang: interrupted\n")

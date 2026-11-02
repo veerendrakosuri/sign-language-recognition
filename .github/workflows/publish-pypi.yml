@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Existing release tag to publish, for example v0.4.0
+        description: Existing release tag to publish, for example v0.5.0
         required: true
         type: string
       confirm:
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/project/sign-language-recognition/
+      url: https://pypi.org/project/signlab-asl/
     permissions:
       id-token: write
     steps:

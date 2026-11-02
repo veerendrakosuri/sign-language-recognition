@@ -31,7 +31,7 @@ def _dependency(name, extra):
         return importlib.import_module(name)
     except ImportError as error:
         raise ImportError(
-            f"{name} is unavailable. Install: pip install 'sign-language-recognition[{extra}]'"
+            f"{name} is unavailable. Install: pip install 'signlab-asl[{extra}]'"
         ) from error
 
 

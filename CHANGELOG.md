@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0 — 2026-11-02
+
+- Rename the distributable project to `signlab-asl` so it can be published under the configured PyPI trusted publisher. The Python import package and `signlang` command are unchanged.
+
 ## 0.4.0 — 2026-10-18
 
 - Expand the usable official WLASL100 split from 1,013 to 1,466 clips using selectively recovered public raw-video archives; source videos and landmark caches remain excluded from releases.

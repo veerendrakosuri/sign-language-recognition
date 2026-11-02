@@ -1,18 +1,18 @@
 # Python package and CLI guide
 
-Version 0.4.0 is an alpha developer toolkit for isolated ASL words. It exposes saved-video prediction, landmark extraction and audit, model export, and the existing training/evaluation workflows. Recognition remains experimental; package checks are not accuracy measurements.
+Version 0.5.0 is an alpha developer toolkit for isolated ASL words. It exposes saved-video prediction, landmark extraction and audit, model export, and the existing training/evaluation workflows. Recognition remains experimental; package checks are not accuracy measurements.
 
 ## Install
 
 Use Python 3.10–3.12 in a virtual environment. The release wheel has no bundled models or datasets. Install it from GitHub Releases:
 
 ```sh
-python -m pip install "sign-language-recognition[vision] @ https://github.com/veerendrakosuri/sign-language-recognition/releases/download/v0.4.0/sign_language_recognition-0.4.0-py3-none-any.whl"
+python -m pip install "signlab-asl[vision]"
 signlang --version
 signlang --help
 ```
 
-Alternatively, clone the repository, check out `v0.4.0`, and run `python -m pip install ".[vision]"` from its root. Package-registry publication is not claimed; do not assume a same-named PyPI project belongs to this repository.
+Alternatively, clone the repository, check out `v0.5.0`, and run `python -m pip install ".[vision]"` from its root.
 
 | Install choice | Purpose |
 |---|---|
