@@ -6,6 +6,8 @@ A developer-focused Python toolkit and CLI for isolated American Sign Language (
 
 **Developer quick start: [Python API, installation, saved-video prediction, and JSON output](docs/PACKAGE_GUIDE.md).** Version 0.5.0 publishes the package as `signlab-asl` while retaining the `signlang` command and Python imports. It includes `SignRecognizer`, prediction/model-export commands, cache-quality auditing, improved missing-landmark handling, and the expanded reference baseline.
 
+**Install from PyPI:** `python -m pip install "signlab-asl[vision]"`
+
 **[Try the public SignLab web app](https://signlab-asl-veerendra.heartyspoon1024.chatgpt.site)** — upload a short video containing one ASL word. This is a research preview; browser-upload accuracy has not been measured.
 
 **Status:** implementation, training/evaluation materials, and a browser research preview are provided. A local training run on a 71.9%-complete WLASL100 video collection has been evaluated; its [measured results and coverage limits](reports/wlasl100-expanded-run-2026-10-18/README.md) are below. The original checkpoint stays local, while the evaluated baseline's numeric weights are exported for the [web app](web/README.md). No full WLASL100 benchmark, browser-upload accuracy, or live-webcam accuracy is claimed. Google's downloaded detector models locate landmarks; they do not recognize ASL words.
